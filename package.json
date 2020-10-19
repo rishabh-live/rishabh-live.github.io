@@ -1,0 +1,36 @@
+{
+    "name": "rishabh-live",
+    "version": "1.0.0",
+    "description": "Official Repostiory for Rishabh-Live Website",
+    "main": "index.js",
+    "dependencies": {
+        "@zeit/next-css": "^1.0.1",
+        "bootstrap": "^4.5.3",
+        "next": "^9.5.5",
+        "react": "^16.14.0",
+        "react-bootstrap": "^1.3.0",
+        "react-dom": "^16.14.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rishabh-live/rishabh-live-nextjs.git"
+    },
+    "keywords": [
+        "rishabh",
+        "live",
+        "nextjs"
+    ],
+    "author": "Rishabh Arya",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rishabh-live/rishabh-live-nextjs/issues"
+    },
+    "homepage": "https://github.com/rishabh-live/rishabh-live-nextjs#readme"
+}

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3A5DD7;
+}
+
+html::-webkit-scrollbar {
+    width: 0.1px;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+section:nth-child(1) {
+    background: none;
+    font-family: 'Righteous', cursive;
+    .line {
+        label {
+            margin: 10vh;
+            color: rgb(109, 177, 241);
+            font-size: 9vw;
+            animation: line 0.3s ease-in;
+        }
+    }
+    .holder {
+        display: flex;
+        flex-direction: row;
+        .dp {
+            img {
+                height: calc(100px + 25vw);
+                transform: translateX(-10vw);
+                animation: loadimg 1s linear;
+                flex: 1;
+            }
+        }
+        .menu {
+            transform: translate(-10vw, 3vh);
+            animation: menu 1s ease-in-out;
+            flex: 1;
+            background-image: url("/main-ico.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            p {
+                transform: translateY(10px);
+                font-size: 6vh;
+                color: white;
+            }
+        }
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes loadimg {
+    0% {
+        transform: translateX(-50vw);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-2vw);
+        opacity: 0.9;
+    }
+    90% {
+        transform: translateX(-12vw);
+        opacity: 0.95;
+    }
+    100% {
+        transform: translateX(-10vw);
+        opacity: 1;
+    }
+}
+
+@keyframes loadimgmob {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width:500px) {
+    section {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    section:nth-child(1) {
+        .line {
+            label {
+                margin: 2vw;
+                color: rgb(109, 177, 241);
+                font-size: 9vw;
+                animation: line 0.3s ease-in;
+            }
+        }
+        .holder {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            .dp {
+                img {
+                    width: 70vw;
+                    height: auto;
+                    animation: loadimgmob 0.7s linear;
+                    flex: 1;
+                    transform: translateX(0vw);
+                }
+            }
+            .menu {
+                margin-top: 2vh;
+                animation: menumob 1s ease-in-out;
+                flex: 1;
+                background-image: url("/assets/img/main-ico.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                transform: translateX(0vw);
+                p {
+                    font-size: 8vw;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@keyframes line {
+    0% {
+        transform: translateY(-300vw);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: initial;
+    }
+}
+
+@keyframes menu {
+    0% {
+        transform: translate(-10vw, 100vw);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-10vw, 3vh);
+    }
+}
+
+@keyframes menumob {
+    0% {
+        transform: translate(0vw, 100vw);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0vw, 3vh);
+    }
+}
+
+@media (max-width:1200px) and (min-width:500px) {
+    section {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    section:nth-child(1) {
+        background: none;
+        font-family: 'Righteous', cursive;
+        .line {
+            label {
+                margin: 10vh;
+                color: rgb(109, 177, 241);
+                font-size: 9vw;
+                animation: line 0.3s ease-in;
+            }
+        }
+        .holder {
+            display: flex;
+            flex-direction: row;
+            .dp {
+                img {
+                    height: calc(100px + 25vw);
+                    transform: translateX(-10vw);
+                    animation: loadimg 1s linear;
+                    flex: 1;
+                }
+            }
+            .menu {
+                transform: translate(-10vw, 3vh);
+                animation: menu 1s ease-in-out;
+                flex: 1;
+                background-image: url("/assets/img/main-ico.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                p {
+                    transform: translateY(10px);
+                    font-size: 4vw;
+                    color: white;
+                }
+            }
+        }
+    }
+}
