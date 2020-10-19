@@ -51,6 +51,7 @@ section:nth-child(1) .holder .dp img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border-radius: 50%;
 }
 
 section:nth-child(1) .holder .menu {

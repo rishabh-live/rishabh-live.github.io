@@ -39,6 +39,7 @@ section:nth-child(1) {
                 transform: translateX(-10vw);
                 animation: loadimg 1s linear;
                 flex: 1;
+                border-radius: 50%;
             }
         }
         .menu {

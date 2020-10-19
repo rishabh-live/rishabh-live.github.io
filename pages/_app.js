@@ -10,6 +10,8 @@ export default function App({ Component, pageProps }) {
         <HEAD>
             <title>Rishabh-live | Rishabh | rishabh.live</title>
             <link rel="icon" href="/main-ico.png"/>
+            <meta name="title" content="Rishabh | rishabh-live | rishabh.live"/>
+<meta name="description" content="Gladiolus Language Nectar is the first Indian startup to cater to Android and PC based games for the grammar of Indian languages."/>
         </HEAD>
     <Component {...pageProps }
     />
