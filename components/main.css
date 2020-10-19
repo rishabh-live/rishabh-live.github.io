@@ -55,6 +55,7 @@ section:nth-child(1) .holder .dp img {
 }
 
 section:nth-child(1) .holder .menu {
+  margin-top: 5vh;
   -webkit-transform: translate(-10vw, 3vh);
           transform: translate(-10vw, 3vh);
   -webkit-animation: menu 1s ease-in-out;
@@ -69,6 +70,7 @@ section:nth-child(1) .holder .menu {
 }
 
 section:nth-child(1) .holder .menu p {
+  padding-top: 2vh;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
   font-size: 6vh;

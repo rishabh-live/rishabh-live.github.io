@@ -43,6 +43,7 @@ section:nth-child(1) {
             }
         }
         .menu {
+            margin-top: 5vh;
             transform: translate(-10vw, 3vh);
             animation: menu 1s ease-in-out;
             flex: 1;
@@ -50,7 +51,7 @@ section:nth-child(1) {
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            p {
+            p {padding-top: 2vh;
                 transform: translateY(10px);
                 font-size: 6vh;
                 color: white;
