@@ -131,6 +131,9 @@ section:nth-child(2) {
         
       }
     }
+    .paragraphMobile{
+        display: none;
+    }
   }
 }
 
@@ -295,6 +298,7 @@ section:nth-child(2) {
         }
       }
       .paragraphMobile{
+          display: block;
         font-family: 'Ubuntu', sans-serif;
         font-size: calc(3.4vh);
         padding: 10vw;       

@@ -21,7 +21,7 @@ export default function Mywork() {
                 <label class="paragraph">
                   I am Rishabh. I am a Web Developer and I have worked with
                   HyperText Preproccesor (PHP), NodeJS and Java Server Pages
-                  (JSP). I do have developed and maintained a website for
+                  (JSP). I do have developed and maintained a website for 
                   <LINK href="https://languagenectar.com">
                     <a>
                       Gladiolus Langauge Nectar <sup>[!]</sup>
@@ -33,7 +33,7 @@ export default function Mywork() {
             <label class="paragraphMobile">
               I am Rishabh. I am a Web Developer and I have worked with
               HyperText Preproccesor (PHP), NodeJS and Java Server Pages (JSP).
-              I do have developed and maintained a website for
+              I do have developed and maintained a website for 
               <LINK href="https://languagenectar.com">
                 <a>
                   Gladiolus Langauge Nectar <sup>[!]</sup>

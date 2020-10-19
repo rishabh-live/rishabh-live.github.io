@@ -160,6 +160,10 @@ section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
   margin-top: auto;
 }
 
+section:nth-child(2) .aboutCardHolder .paragraphMobile {
+  display: none;
+}
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -388,6 +392,7 @@ section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
     display: none;
   }
   section:nth-child(2) .aboutCardHolder .paragraphMobile {
+    display: block;
     font-family: 'Ubuntu', sans-serif;
     font-size: calc(3.4vh);
     padding: 10vw;
