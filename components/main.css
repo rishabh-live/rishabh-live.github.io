@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
 body,
 html {
   margin: 0;
@@ -78,14 +82,14 @@ section:nth-child(2) {
   font-family: "Righteous", cursive;
 }
 
-section:nth-child(2) div {
+section:nth-child(2) .headline {
   width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-section:nth-child(2) div .backTitle {
+section:nth-child(2) .headline .backTitle {
   color: #d6ebf7;
   margin: 0 auto;
   width: 100vw;
@@ -96,8 +100,8 @@ section:nth-child(2) div .backTitle {
           transform: translateX(-9vw);
 }
 
-section:nth-child(2) div .frontTitle {
-  color: #10a0fa;
+section:nth-child(2) .headline .frontTitle {
+  color: #3a5dd7;
   margin: 0 auto;
   width: 100vw;
   z-index: 200;
@@ -105,6 +109,54 @@ section:nth-child(2) div .frontTitle {
   font-size: 7vh;
   -webkit-transform: translate(4vw, 12vh);
           transform: translate(4vw, 12vh);
+}
+
+section:nth-child(2) .aboutCardHolder {
+  position: absolute;
+  height: 50vh;
+  width: 70vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 28vh;
+  margin-left: 15vw;
+}
+
+section:nth-child(2) .aboutCardHolder .aboutCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section:nth-child(2) .aboutCardHolder .aboutCard .mypic img {
+  max-height: 50vh;
+}
+
+section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label {
+  font-family: "Righteous", cursive;
+  padding: 2vw;
+  font-size: 3vw;
+  color: #3a5dd7;
+  position: absolute;
+}
+
+section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
+  z-index: -3300000;
+  font-size: 4vw;
+  color: #3a5dd7;
+  opacity: 0.1;
+  -webkit-transform: translate(-2vw, -4vh);
+          transform: translate(-2vw, -4vh);
+}
+
+section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: calc(11px + 1vw);
+  position: absolute;
+  padding-top: 5vw;
+  -webkit-transform: translateY(3vh);
+          transform: translateY(3vh);
+  color: #15afaf;
+  text-align: right;
 }
 
 @-webkit-keyframes fadein {
