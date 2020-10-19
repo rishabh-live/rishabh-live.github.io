@@ -61,7 +61,7 @@ section:nth-child(1) .holder .menu {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-image: url("/main-ico.png");
+  background-image: url("/menu-ico.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -206,7 +206,7 @@ section:nth-child(1) .holder .menu p {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    background-image: url("/main-ico.png");
+    background-image: url("/menu-ico.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -340,7 +340,7 @@ section:nth-child(1) .holder .menu p {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    background-image: url("/main-ico.png");
+    background-image: url("/menu-ico.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
