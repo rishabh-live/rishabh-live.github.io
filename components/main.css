@@ -25,7 +25,7 @@ section:nth-child(1) {
 }
 
 section:nth-child(1) .line label {
-  margin: 10vh;
+  margin: 1vh;
   color: #6db1f1;
   font-size: 9vw;
   -webkit-animation: line 0.3s ease-in;
@@ -206,7 +206,7 @@ section:nth-child(1) .holder .menu p {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    background-image: url("/assets/img/main-ico.png");
+    background-image: url("/main-ico.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -340,7 +340,7 @@ section:nth-child(1) .holder .menu p {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    background-image: url("/assets/img/main-ico.png");
+    background-image: url("/main-ico.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
