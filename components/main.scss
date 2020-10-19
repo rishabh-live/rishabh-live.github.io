@@ -135,6 +135,34 @@ section:nth-child(2) {
   }
 }
 
+section:nth-child(3) {
+    font-family: "Righteous", cursive;
+    .headline {
+      width: 100vw;
+      justify-content: center;
+  
+      .backTitle {
+        color: rgb(214, 235, 247);
+        margin: 0 auto;
+        width: 100vw;
+        z-index: -200;
+        font-size: 15vh;
+        position: absolute;
+        transform: translateX(-9vw);
+      }
+      .frontTitle {
+        color: #3a5dd7;
+        margin: 0 auto;
+        width: 100vw;
+        z-index: 200;
+        position: absolute;
+        font-size: 7vh;
+        transform: translate(4vw, 12vh);
+      }
+    }
+    
+  }
+
 @media (max-width: 500px) {
   section {
     overflow-y: scroll;

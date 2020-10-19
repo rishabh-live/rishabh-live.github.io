@@ -3,6 +3,7 @@ import {} from '../components/main.css';
 import {} from '../components/localLibs/w3.min.css';
 import { title } from 'process';
 import HEAD from 'next/head';
+import LINK from "next/link";
 
 export default function App({ Component, pageProps }) {
     return (

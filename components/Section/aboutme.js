@@ -6,7 +6,7 @@ export default function Me() {
       <section>
         <center>
           <div class="headline">
-            <div class="backTitle">Who M'I ?</div>
+            <div class="backTitle">About</div>
             <div class="frontTitle">Who M'I ?</div>
           </div>
           <div class="aboutCardHolder w3-card-4">

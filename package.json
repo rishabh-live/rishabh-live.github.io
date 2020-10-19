@@ -1,7 +1,7 @@
 {
     "name": "rishabh-live",
     "version": "1.0.0",
-    "description": "Official Repostiory for Rishabh-Live Website",
+    "description": "Official Repostiory for Rishabh-Live Website. This is theme is called RiLive",
     "main": "index.js",
     "dependencies": {
         "@zeit/next-css": "^1.0.1",
