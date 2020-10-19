@@ -5,10 +5,6 @@ html {
   padding: 0;
 }
 
-body {
-  background-color: #3A5DD7;
-}
-
 html::-webkit-scrollbar {
   width: 0.1px;
 }
@@ -21,7 +17,8 @@ section {
 
 section:nth-child(1) {
   background: none;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
+  background-color: #3a5dd7;
 }
 
 section:nth-child(1) .line label {
@@ -75,6 +72,39 @@ section:nth-child(1) .holder .menu p {
           transform: translateY(10px);
   font-size: 6vh;
   color: white;
+}
+
+section:nth-child(2) {
+  font-family: "Righteous", cursive;
+}
+
+section:nth-child(2) div {
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section:nth-child(2) div .backTitle {
+  color: #d6ebf7;
+  margin: 0 auto;
+  width: 100vw;
+  z-index: -200;
+  font-size: 15vh;
+  position: absolute;
+  -webkit-transform: translateX(-9vw);
+          transform: translateX(-9vw);
+}
+
+section:nth-child(2) div .frontTitle {
+  color: #10a0fa;
+  margin: 0 auto;
+  width: 100vw;
+  z-index: 200;
+  position: absolute;
+  font-size: 7vh;
+  -webkit-transform: translate(4vw, 12vh);
+          transform: translate(4vw, 12vh);
 }
 
 @-webkit-keyframes fadein {
@@ -307,7 +337,7 @@ section:nth-child(1) .holder .menu p {
   }
   section:nth-child(1) {
     background: none;
-    font-family: 'Righteous', cursive;
+    font-family: "Righteous", cursive;
   }
   section:nth-child(1) .line label {
     margin: 10vh;
