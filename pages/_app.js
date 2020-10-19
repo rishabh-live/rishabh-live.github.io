@@ -11,7 +11,8 @@ export default function App({ Component, pageProps }) {
             <title>Rishabh-live | Rishabh | rishabh.live</title>
             <link rel="icon" href="/main-ico.png"/>
             <meta name="title" content="Rishabh | rishabh-live | rishabh.live"/>
-<meta name="description" content="Gladiolus Language Nectar is the first Indian startup to cater to Android and PC based games for the grammar of Indian languages."/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <meta name="description" content="Official Website for rishabh.live This Theme is called as RiLive"/>
         </HEAD>
     <Component {...pageProps }
     />
