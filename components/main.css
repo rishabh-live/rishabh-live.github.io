@@ -164,96 +164,6 @@ section:nth-child(2) .aboutCardHolder .paragraphMobile {
   display: none;
 }
 
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes loadimg {
-  0% {
-    -webkit-transform: translateX(-50vw);
-            transform: translateX(-50vw);
-    opacity: 0;
-  }
-  80% {
-    -webkit-transform: translateX(-2vw);
-            transform: translateX(-2vw);
-    opacity: 0.9;
-  }
-  90% {
-    -webkit-transform: translateX(-12vw);
-            transform: translateX(-12vw);
-    opacity: 0.95;
-  }
-  100% {
-    -webkit-transform: translateX(-10vw);
-            transform: translateX(-10vw);
-    opacity: 1;
-  }
-}
-
-@keyframes loadimg {
-  0% {
-    -webkit-transform: translateX(-50vw);
-            transform: translateX(-50vw);
-    opacity: 0;
-  }
-  80% {
-    -webkit-transform: translateX(-2vw);
-            transform: translateX(-2vw);
-    opacity: 0.9;
-  }
-  90% {
-    -webkit-transform: translateX(-12vw);
-            transform: translateX(-12vw);
-    opacity: 0.95;
-  }
-  100% {
-    -webkit-transform: translateX(-10vw);
-            transform: translateX(-10vw);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes loadimgmob {
-  0% {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes loadimgmob {
-  0% {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
 @media (max-width: 500px) {
   section {
     overflow-y: scroll;
@@ -342,7 +252,7 @@ section:nth-child(2) .aboutCardHolder .paragraphMobile {
     width: 90vw;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 28vh;
+    margin-top: 22vh;
     margin-left: 5vw;
     background-image: url("/about-dp.jpg");
     background-position: center;
@@ -402,84 +312,6 @@ section:nth-child(2) .aboutCardHolder .paragraphMobile {
     background-color: #3a5dd7;
     height: 100%;
     opacity: 0.9;
-  }
-}
-
-@-webkit-keyframes line {
-  0% {
-    -webkit-transform: translateY(-300vw);
-            transform: translateY(-300vw);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: initial;
-            transform: initial;
-  }
-}
-
-@keyframes line {
-  0% {
-    -webkit-transform: translateY(-300vw);
-            transform: translateY(-300vw);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: initial;
-            transform: initial;
-  }
-}
-
-@-webkit-keyframes menu {
-  0% {
-    -webkit-transform: translate(-10vw, 100vw);
-            transform: translate(-10vw, 100vw);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(-10vw, 3vh);
-            transform: translate(-10vw, 3vh);
-  }
-}
-
-@keyframes menu {
-  0% {
-    -webkit-transform: translate(-10vw, 100vw);
-            transform: translate(-10vw, 100vw);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(-10vw, 3vh);
-            transform: translate(-10vw, 3vh);
-  }
-}
-
-@-webkit-keyframes menumob {
-  0% {
-    -webkit-transform: translate(0vw, 100vw);
-            transform: translate(0vw, 100vw);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0vw, 3vh);
-            transform: translate(0vw, 3vh);
-  }
-}
-
-@keyframes menumob {
-  0% {
-    -webkit-transform: translate(0vw, 100vw);
-            transform: translate(0vw, 100vw);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0vw, 3vh);
-            transform: translate(0vw, 3vh);
   }
 }
 
@@ -573,7 +405,7 @@ section:nth-child(2) .aboutCardHolder .paragraphMobile {
     width: 90vw;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 28vh;
+    margin-top: 25vh;
     margin-left: 5vw;
     background-image: url("/about-dp.jpg");
     background-position: center;
@@ -633,6 +465,174 @@ section:nth-child(2) .aboutCardHolder .paragraphMobile {
     background-color: #3a5dd7;
     height: 100%;
     opacity: 0.9;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loadimg {
+  0% {
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateX(-2vw);
+            transform: translateX(-2vw);
+    opacity: 0.9;
+  }
+  90% {
+    -webkit-transform: translateX(-12vw);
+            transform: translateX(-12vw);
+    opacity: 0.95;
+  }
+  100% {
+    -webkit-transform: translateX(-10vw);
+            transform: translateX(-10vw);
+    opacity: 1;
+  }
+}
+
+@keyframes loadimg {
+  0% {
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateX(-2vw);
+            transform: translateX(-2vw);
+    opacity: 0.9;
+  }
+  90% {
+    -webkit-transform: translateX(-12vw);
+            transform: translateX(-12vw);
+    opacity: 0.95;
+  }
+  100% {
+    -webkit-transform: translateX(-10vw);
+            transform: translateX(-10vw);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loadimgmob {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes loadimgmob {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes line {
+  0% {
+    -webkit-transform: translateY(-300vw);
+            transform: translateY(-300vw);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: initial;
+            transform: initial;
+  }
+}
+
+@keyframes line {
+  0% {
+    -webkit-transform: translateY(-300vw);
+            transform: translateY(-300vw);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: initial;
+            transform: initial;
+  }
+}
+
+@-webkit-keyframes menu {
+  0% {
+    -webkit-transform: translate(-10vw, 100vw);
+            transform: translate(-10vw, 100vw);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-10vw, 3vh);
+            transform: translate(-10vw, 3vh);
+  }
+}
+
+@keyframes menu {
+  0% {
+    -webkit-transform: translate(-10vw, 100vw);
+            transform: translate(-10vw, 100vw);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-10vw, 3vh);
+            transform: translate(-10vw, 3vh);
+  }
+}
+
+@-webkit-keyframes menumob {
+  0% {
+    -webkit-transform: translate(0vw, 100vw);
+            transform: translate(0vw, 100vw);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0vw, 3vh);
+            transform: translate(0vw, 3vh);
+  }
+}
+
+@keyframes menumob {
+  0% {
+    -webkit-transform: translate(0vw, 100vw);
+            transform: translate(0vw, 100vw);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0vw, 3vh);
+            transform: translate(0vw, 3vh);
   }
 }
 /*# sourceMappingURL=main.css.map */
