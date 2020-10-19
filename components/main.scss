@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
 body,
 html {
   margin: 0;
@@ -106,33 +106,31 @@ section:nth-child(2) {
           font-family: "Righteous", cursive;
           padding: 2vw;
           font-size: 3vw;
-          color:#3a5dd7;
+          color: #3a5dd7;
           position: absolute;
         }
 
-        label:nth-child(1){
-            z-index: -3300000;
-            font-size: 4vw;
-            color: #3a5dd7;
-            opacity: 0.1;
-            transform: translate(-2vw, -4vh);
+        label:nth-child(1) {
+          z-index: -3300000;
+          font-size: 4vw;
+          color: #3a5dd7;
+          opacity: 0.1;
+          transform: translate(-2vw, -4vh);
         }
-        .paragraph{
-            font-family: 'Ubuntu', sans-serif;
-            font-size: calc(11px + 1vw);
-            position: absolute;
-            padding-top:5vw;
-            transform: translateY(3vh);
-            color: rgb(21, 175, 175);
-            text-align: right;
-            margin-top: auto;
+        .paragraph {
+          font-family: "Ubuntu", sans-serif;
+          font-size: calc(11px + 1vw);
+          position: absolute;
+          padding-top: 5vw;
+          transform: translateY(3vh);
+          color: rgb(21, 175, 175);
+          text-align: right;
+          margin-top: auto;
         }
-        
-        
       }
     }
-    .paragraphMobile{
-        display: none;
+    .paragraphMobile {
+      display: none;
     }
   }
 }
@@ -224,7 +222,7 @@ section:nth-child(2) {
     .headline {
       width: 100vw;
       justify-content: center;
-  
+
       .backTitle {
         color: rgb(214, 235, 247);
         margin: 0 auto;
@@ -251,7 +249,7 @@ section:nth-child(2) {
       justify-self: center;
       margin-top: 28vh;
       margin-left: 5vw;
-      background-image: url('/about-dp.jpg');
+      background-image: url("/about-dp.jpg");
       background-position: center;
       .aboutCard {
         display: flex;
@@ -260,7 +258,6 @@ section:nth-child(2) {
         .mypic {
           img {
             height: 100vw;
-            
           }
           overflow: hidden;
           display: none;
@@ -270,45 +267,43 @@ section:nth-child(2) {
             font-family: "Righteous", cursive;
             padding: 2vw;
             font-size: 3vw;
-            color:#3a5dd7;
+            color: #3a5dd7;
             position: absolute;
           }
-  
-          label:nth-child(1){
-              z-index: -3300000;
-              font-size: 4vw;
-              color: #3a5dd7;
-              opacity: 0.1;
-              transform: translate(-2vw, -4vh);
+
+          label:nth-child(1) {
+            z-index: -3300000;
+            font-size: 4vw;
+            color: #3a5dd7;
+            opacity: 0.1;
+            transform: translate(-2vw, -4vh);
           }
-          .paragraph{
-              font-family: 'Ubuntu', sans-serif;
-              font-size: calc(11px + 1vw);
-              position: absolute;
-              padding-top:5vw;
-              transform: translateY(3vh);
-              color: rgb(21, 175, 175);
-              text-align: right;
-              margin-top: auto;
-              
-              display: none;
+          .paragraph {
+            font-family: "Ubuntu", sans-serif;
+            font-size: calc(11px + 1vw);
+            position: absolute;
+            padding-top: 5vw;
+            transform: translateY(3vh);
+            color: rgb(21, 175, 175);
+            text-align: right;
+            margin-top: auto;
+
+            display: none;
           }
-          
-          
         }
       }
-      .paragraphMobile{
-          display: block;
-        font-family: 'Ubuntu', sans-serif;
+      .paragraphMobile {
+        display: block;
+        font-family: "Ubuntu", sans-serif;
         font-size: calc(3.4vh);
-        padding: 10vw;       
-        color:  rgb(255, 255, 255);
+        padding: 10vw;
+        color: rgb(255, 255, 255);
         text-align: justify;
         margin-top: auto;
         background-color: #3a5dd7;
         height: 100%;
         opacity: 0.9;
-    }
+      }
     }
   }
 }
@@ -354,9 +349,10 @@ section:nth-child(2) {
   section:nth-child(1) {
     background: none;
     font-family: "Righteous", cursive;
+    background-color: #3a5dd7;
     .line {
       label {
-        margin: 10vh;
+        margin: 2vh;
         color: rgb(109, 177, 241);
         font-size: 9vw;
         animation: line 0.3s ease-in;
@@ -394,13 +390,13 @@ section:nth-child(2) {
     .headline {
       width: 100vw;
       justify-content: center;
-  
+
       .backTitle {
         color: rgb(214, 235, 247);
         margin: 0 auto;
         width: 100vw;
         z-index: -200;
-        font-size: 15vw;
+        font-size: 15vh;
         position: absolute;
         transform: translateX(-9vw);
       }
@@ -416,48 +412,65 @@ section:nth-child(2) {
     }
     .aboutCardHolder {
       position: absolute;
-      height: 50vh;
-      width: 70vw;
+      height: 70vh;
+      width: 90vw;
       justify-self: center;
       margin-top: 28vh;
-      margin-left: 15vw;
+      margin-left: 5vw;
+      background-image: url("/about-dp.jpg");
+      background-position: center;
       .aboutCard {
         display: flex;
         flex-direction: column;
+        display: none;
         .mypic {
           img {
-            max-height: 15vh;
+            height: 100vw;
           }
+          overflow: hidden;
+          display: none;
         }
         .aboutme {
           label {
             font-family: "Righteous", cursive;
             padding: 2vw;
             font-size: 3vw;
-            color:#3a5dd7;
+            color: #3a5dd7;
             position: absolute;
           }
-  
-          label:nth-child(1){
-              z-index: -3300000;
-              font-size: 4vw;
-              color: #3a5dd7;
-              opacity: 0.1;
-              transform: translate(-2vw, -4vh);
+
+          label:nth-child(1) {
+            z-index: -3300000;
+            font-size: 4vw;
+            color: #3a5dd7;
+            opacity: 0.1;
+            transform: translate(-2vw, -4vh);
           }
-          .paragraph{
-              font-family: 'Ubuntu', sans-serif;
-              font-size: calc(11px + 1vw);
-              position: absolute;
-              padding-top:5vw;
-              transform: translateY(3vh);
-              color: rgb(21, 175, 175);
-              text-align: right;
-              margin-top: auto;
+          .paragraph {
+            font-family: "Ubuntu", sans-serif;
+            font-size: calc(11px + 1vw);
+            position: absolute;
+            padding-top: 5vw;
+            transform: translateY(3vh);
+            color: rgb(21, 175, 175);
+            text-align: right;
+            margin-top: auto;
+
+            display: none;
           }
-          
-          
         }
+      }
+      .paragraphMobile {
+        display: block;
+        font-family: "Ubuntu", sans-serif;
+        font-size: calc(5vh);
+        padding: 10vw;
+        color: rgb(255, 255, 255);
+        text-align: justify;
+        margin-top: auto;
+        background-color: #3a5dd7;
+        height: 100%;
+        opacity: 0.9;
       }
     }
   }
