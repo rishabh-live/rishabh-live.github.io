@@ -125,6 +125,7 @@ section:nth-child(2) {
             transform: translateY(3vh);
             color: rgb(21, 175, 175);
             text-align: right;
+            margin-top: auto;
         }
         
         
@@ -215,6 +216,97 @@ section:nth-child(2) {
       }
     }
   }
+  section:nth-child(2) {
+    font-family: "Righteous", cursive;
+    .headline {
+      width: 100vw;
+      justify-content: center;
+  
+      .backTitle {
+        color: rgb(214, 235, 247);
+        margin: 0 auto;
+        width: 100vw;
+        z-index: -200;
+        font-size: 20vw;
+        position: absolute;
+        transform: translateX(-3vw);
+      }
+      .frontTitle {
+        color: #3a5dd7;
+        margin: 0 auto;
+        width: 100vw;
+        z-index: 200;
+        position: absolute;
+        font-size: 15vw;
+        transform: translate(11vw, 5vh);
+      }
+    }
+    .aboutCardHolder {
+      position: absolute;
+      height: 70vh;
+      width: 90vw;
+      justify-self: center;
+      margin-top: 28vh;
+      margin-left: 5vw;
+      background-image: url('/about-dp.jpg');
+      background-position: center;
+      .aboutCard {
+        display: flex;
+        flex-direction: column;
+        display: none;
+        .mypic {
+          img {
+            height: 100vw;
+            
+          }
+          overflow: hidden;
+          display: none;
+        }
+        .aboutme {
+          label {
+            font-family: "Righteous", cursive;
+            padding: 2vw;
+            font-size: 3vw;
+            color:#3a5dd7;
+            position: absolute;
+          }
+  
+          label:nth-child(1){
+              z-index: -3300000;
+              font-size: 4vw;
+              color: #3a5dd7;
+              opacity: 0.1;
+              transform: translate(-2vw, -4vh);
+          }
+          .paragraph{
+              font-family: 'Ubuntu', sans-serif;
+              font-size: calc(11px + 1vw);
+              position: absolute;
+              padding-top:5vw;
+              transform: translateY(3vh);
+              color: rgb(21, 175, 175);
+              text-align: right;
+              margin-top: auto;
+              
+              display: none;
+          }
+          
+          
+        }
+      }
+      .paragraphMobile{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: calc(3.4vh);
+        padding: 10vw;       
+        color:  rgb(255, 255, 255);
+        text-align: justify;
+        margin-top: auto;
+        background-color: #3a5dd7;
+        height: 100%;
+        opacity: 0.9;
+    }
+    }
+  }
 }
 
 @keyframes line {
@@ -289,6 +381,78 @@ section:nth-child(2) {
           transform: translateY(10px);
           font-size: 4vw;
           color: white;
+        }
+      }
+    }
+  }
+  section:nth-child(2) {
+    font-family: "Righteous", cursive;
+    .headline {
+      width: 100vw;
+      justify-content: center;
+  
+      .backTitle {
+        color: rgb(214, 235, 247);
+        margin: 0 auto;
+        width: 100vw;
+        z-index: -200;
+        font-size: 15vw;
+        position: absolute;
+        transform: translateX(-9vw);
+      }
+      .frontTitle {
+        color: #3a5dd7;
+        margin: 0 auto;
+        width: 100vw;
+        z-index: 200;
+        position: absolute;
+        font-size: 7vh;
+        transform: translate(4vw, 12vh);
+      }
+    }
+    .aboutCardHolder {
+      position: absolute;
+      height: 50vh;
+      width: 70vw;
+      justify-self: center;
+      margin-top: 28vh;
+      margin-left: 15vw;
+      .aboutCard {
+        display: flex;
+        flex-direction: column;
+        .mypic {
+          img {
+            max-height: 15vh;
+          }
+        }
+        .aboutme {
+          label {
+            font-family: "Righteous", cursive;
+            padding: 2vw;
+            font-size: 3vw;
+            color:#3a5dd7;
+            position: absolute;
+          }
+  
+          label:nth-child(1){
+              z-index: -3300000;
+              font-size: 4vw;
+              color: #3a5dd7;
+              opacity: 0.1;
+              transform: translate(-2vw, -4vh);
+          }
+          .paragraph{
+              font-family: 'Ubuntu', sans-serif;
+              font-size: calc(11px + 1vw);
+              position: absolute;
+              padding-top:5vw;
+              transform: translateY(3vh);
+              color: rgb(21, 175, 175);
+              text-align: right;
+              margin-top: auto;
+          }
+          
+          
         }
       }
     }

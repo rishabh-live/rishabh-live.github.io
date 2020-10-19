@@ -157,6 +157,7 @@ section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
           transform: translateY(3vh);
   color: #15afaf;
   text-align: right;
+  margin-top: auto;
 }
 
 @-webkit-keyframes fadein {
@@ -302,6 +303,101 @@ section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
     font-size: 8vw;
     color: white;
   }
+  section:nth-child(2) {
+    font-family: "Righteous", cursive;
+  }
+  section:nth-child(2) .headline {
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section:nth-child(2) .headline .backTitle {
+    color: #d6ebf7;
+    margin: 0 auto;
+    width: 100vw;
+    z-index: -200;
+    font-size: 20vw;
+    position: absolute;
+    -webkit-transform: translateX(-3vw);
+            transform: translateX(-3vw);
+  }
+  section:nth-child(2) .headline .frontTitle {
+    color: #3a5dd7;
+    margin: 0 auto;
+    width: 100vw;
+    z-index: 200;
+    position: absolute;
+    font-size: 15vw;
+    -webkit-transform: translate(11vw, 5vh);
+            transform: translate(11vw, 5vh);
+  }
+  section:nth-child(2) .aboutCardHolder {
+    position: absolute;
+    height: 70vh;
+    width: 90vw;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 28vh;
+    margin-left: 5vw;
+    background-image: url("/about-dp.jpg");
+    background-position: center;
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard .mypic {
+    overflow: hidden;
+    display: none;
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard .mypic img {
+    height: 100vw;
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label {
+    font-family: "Righteous", cursive;
+    padding: 2vw;
+    font-size: 3vw;
+    color: #3a5dd7;
+    position: absolute;
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
+    z-index: -3300000;
+    font-size: 4vw;
+    color: #3a5dd7;
+    opacity: 0.1;
+    -webkit-transform: translate(-2vw, -4vh);
+            transform: translate(-2vw, -4vh);
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: calc(11px + 1vw);
+    position: absolute;
+    padding-top: 5vw;
+    -webkit-transform: translateY(3vh);
+            transform: translateY(3vh);
+    color: #15afaf;
+    text-align: right;
+    margin-top: auto;
+    display: none;
+  }
+  section:nth-child(2) .aboutCardHolder .paragraphMobile {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: calc(3.4vh);
+    padding: 10vw;
+    color: white;
+    text-align: justify;
+    margin-top: auto;
+    background-color: #3a5dd7;
+    height: 100%;
+    opacity: 0.9;
+  }
 }
 
 @-webkit-keyframes line {
@@ -435,6 +531,82 @@ section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
             transform: translateY(10px);
     font-size: 4vw;
     color: white;
+  }
+  section:nth-child(2) {
+    font-family: "Righteous", cursive;
+  }
+  section:nth-child(2) .headline {
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section:nth-child(2) .headline .backTitle {
+    color: #d6ebf7;
+    margin: 0 auto;
+    width: 100vw;
+    z-index: -200;
+    font-size: 15vw;
+    position: absolute;
+    -webkit-transform: translateX(-9vw);
+            transform: translateX(-9vw);
+  }
+  section:nth-child(2) .headline .frontTitle {
+    color: #3a5dd7;
+    margin: 0 auto;
+    width: 100vw;
+    z-index: 200;
+    position: absolute;
+    font-size: 7vh;
+    -webkit-transform: translate(4vw, 12vh);
+            transform: translate(4vw, 12vh);
+  }
+  section:nth-child(2) .aboutCardHolder {
+    position: absolute;
+    height: 50vh;
+    width: 70vw;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 28vh;
+    margin-left: 15vw;
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard .mypic img {
+    max-height: 15vh;
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label {
+    font-family: "Righteous", cursive;
+    padding: 2vw;
+    font-size: 3vw;
+    color: #3a5dd7;
+    position: absolute;
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme label:nth-child(1) {
+    z-index: -3300000;
+    font-size: 4vw;
+    color: #3a5dd7;
+    opacity: 0.1;
+    -webkit-transform: translate(-2vw, -4vh);
+            transform: translate(-2vw, -4vh);
+  }
+  section:nth-child(2) .aboutCardHolder .aboutCard .aboutme .paragraph {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: calc(11px + 1vw);
+    position: absolute;
+    padding-top: 5vw;
+    -webkit-transform: translateY(3vh);
+            transform: translateY(3vh);
+    color: #15afaf;
+    text-align: right;
+    margin-top: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
