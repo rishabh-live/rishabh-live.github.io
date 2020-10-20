@@ -246,7 +246,7 @@ section:nth-child(3) .gitCardHolder .gitCard .projCards div .nameOfTheProject {
 }
 
 section:nth-child(3) .gitCardHolder .gitCard .projCards div img {
-  height: 50px;
+  height: 40px;
   margin: 14px;
 }
 
@@ -474,13 +474,13 @@ section:nth-child(3) .gitCardHolder .gitCard .projCards div p:nth-child(2) label
             transform: translateY(5px);
   }
   section:nth-child(3) .gitCardHolder .gitCard .projCards div .nameOfTheProject {
-    font-size: 6vw;
+    font-size: 5vw;
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
   }
   section:nth-child(3) .gitCardHolder .gitCard .projCards div img {
-    height: 50px;
-    margin: 14px;
+    height: 30px;
+    margin: 10px;
   }
   section:nth-child(3) .gitCardHolder .gitCard .projCards div .prjDesc {
     font-family: "Ubuntu", sans-serif;
