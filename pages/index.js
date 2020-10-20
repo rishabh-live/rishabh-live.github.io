@@ -1,8 +1,10 @@
-import Github from "../components/Section/github";
 import LINK from "next/link";
+import Gitdata from '../components/database/gitrepos.json'
 
-function Indexpage() {
+export default function Indexpage() {
+  
   return (
+
     <>
       <section>
         <center>
@@ -31,8 +33,7 @@ function Indexpage() {
                 <img src="/about-dp.jpg" alt="Rishabh" />
               </div>
               <div class="aboutme">
-                <label>About Me</label>
-                <label>About Me</label>
+                {/*  */}
                 <br />
                 <label class="paragraph">
                   I am Rishabh. I am a Web Developer and I have worked with
@@ -59,8 +60,54 @@ function Indexpage() {
           </div>
         </center>
       </section>
-      <Github />
-      
+      <section class="secThree">
+        <center>
+          <div class="headline">
+            <div class="backTitle">Projects</div>
+            <div class="frontTitle">My Works</div>
+          </div>
+          <div class="gitCardHolder">
+            <div class="gitCard">
+
+                {Gitdata.map((gitDetail)=>{
+                  return <div class="projCards w3-card-4">
+                  <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_326384.png&f=1&nofb=1" alt="Github Icon" />
+                    <LINK href={gitDetail.html_url}><label class="nameOfTheProject"> {gitDetail.name} </label></LINK> <label class="w3-tag w3-yellow w3-card-2 w3-margin">
+                        {gitDetail.language}
+                              </label>
+                    <p class="prjDesc">
+                      {gitDetail.description}
+                          </p>
+                    <p>
+                      <label class="w3-tag w3-green w3-card-2 w3-margin">
+                        Created on : {gitDetail.created_at}
+                              </label>
+                      <label class="w3-tag w3-green w3-card-2 w3-margin">
+                        Updated on : {gitDetail.updated_at}
+                              </label>
+                      
+                      <LINK href={gitDetail.html_url}>
+                        <label class="w3-tag w3-black w3-card-2 w3-margin">
+                          Open in Github
+                          </label>
+                      </LINK>
+  
+                    </p>
+                  </div>
+                </div>
+
+                })}
+
+              
+
+
+
+            </div>
+          </div>
+        </center>
+      </section>
+
     </>
   );
 }
@@ -70,7 +117,11 @@ function Indexpage() {
 //     const json = await res.json()
 //     return { stars: json.login}
 // }
-  
+
+// Indexpage.getInitialProps = async (ctx) => {
+//   const res = await fetch('/database/gitrepos.json')
+//   const json = await res.json()
+//   return { reslt: { repos: json.name } }
+// }
 
 
-export default Indexpage;
