@@ -135,9 +135,9 @@ section:nth-child(2) {
 	}
 }
 
-section:nth-child(3){
+section:nth-child(3) {
 	font-family: "Righteous", cursive;
-	
+
 	.headline {
 		width: 100vw;
 		justify-content: center;
@@ -149,7 +149,8 @@ section:nth-child(3){
 			z-index: -200;
 			font-size: 15vh;
 			position: absolute;
-			transform: translateX(-9vw);opacity: 0.1;
+			transform: translateX(-9vw);
+			opacity: 0.1;
 		}
 		.frontTitle {
 			color: #3a5dd7;
@@ -167,49 +168,90 @@ section:nth-child(3){
 		width: 100vw;
 		justify-self: center;
 		margin-top: 18vh;
-		
+
 		.gitCard {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
 			.projCards {
 				min-width: 25vw;
 				height: auto;
 				border-color: #3a5dd7;
 				border-radius: 10px;
-        margin-left: 1vw;
-        margin-right: 1vw;
-        margin-top: 5vw;
-        flex: 1;
-        text-align: left;
-        div{
-          font-family: "Righteous", cursive;
-          transform: translateY(5px);
-          
-          .nameOfTheProject{
-            font-size: 1.5vw;
-            transform: translateY(5px);
-          }
-          img{
-            height: 40px;
-            margin: 14px;
-          }
-          .prjDesc{
-            font-family: "Ubuntu", sans-serif;
-            margin-left: 1.5vw;
-            font-size: 1vw;
-          }
-          p:nth-child(2){
-            label{
-              font-size: 1vw;
-            }
-          }
-          
-        }
-        
+				margin-left: 1vw;
+				margin-right: 1vw;
+				margin-top: 3vw;
+				flex: 1;
+				text-align: left;
+				div {
+					font-family: "Righteous", cursive;
+					transform: translateY(5px);
+
+					.nameOfTheProject {
+						font-size: 1.5vw;
+						transform: translateY(5px);
+					}
+					img {
+						height: 40px;
+						margin: 14px;
+					}
+					.dipstats {
+						height: auto;
+					}
+					.prjDesc {
+						font-family: "Ubuntu", sans-serif;
+						margin-left: 1.5vw;
+						font-size: 1vw;
+					}
+					p:nth-child(2) {
+						label {
+							font-size: 1vw;
+						}
+					}
+				}
 			}
 		}
-		
+	}
+}
+
+section:nth-child(4) {
+	font-family: "Righteous", cursive;
+
+	.headline {
+		width: 100vw;
+		justify-content: center;
+
+		.backTitle {
+			color: #3a5dd7;
+			margin: 0 auto;
+			width: 100vw;
+			z-index: -200;
+			font-size: 15vh;
+			position: absolute;
+			transform: translateX(-9vw);
+			opacity: 0.1;
+		}
+		.frontTitle {
+			color: #3a5dd7;
+			margin: 0 auto;
+			width: 100vw;
+			z-index: 200;
+			position: absolute;
+			font-size: 7vh;
+			transform: translate(4vw, 12vh);
+		}
+	}
+
+	.img {
+		position: absolute;
+		background-image: url('/rishabh-2.jpeg');
+		height: 50vh;
+		width: 50vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-top: 25vh;
+		transform: translateX(10vw);
+		flex: 1;
 	}
 }
 
@@ -344,9 +386,9 @@ section:nth-child(3){
 				opacity: 0.9;
 			}
 		}
-  }
-  section:nth-child(3){
-    font-family: "Righteous", cursive;
+	}
+	section:nth-child(3) {
+		font-family: "Righteous", cursive;
 		.headline {
 			width: 100vw;
 			justify-content: center;
@@ -358,7 +400,7 @@ section:nth-child(3){
 				z-index: -200;
 				font-size: 20vw;
 				position: absolute;
-				transform: translate(0vh,-4vh);
+				transform: translate(0vh, -4vh);
 			}
 			.frontTitle {
 				color: #3a5dd7;
@@ -369,57 +411,54 @@ section:nth-child(3){
 				font-size: 15vw;
 				transform: translate(11vw, 5vh);
 			}
-    }
-    .gitCardHolder {
-      position: absolute;
-      height: 50vh;
-      width: 100vw;
-      justify-self: center;
-      margin-top: 18vh;
-      
-      .gitCard {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        .projCards {
-          min-width: 60vw;
-          height: auto;
-          border-color: #3a5dd7;
-          border-radius: 10px;
-          
-          margin-top: 5vw;
-          flex: 1;
-          text-align: left;
-          div{
-            font-family: "Righteous", cursive;
-            transform: translateY(5px);
-            
-            .nameOfTheProject{
-              font-size: 5vw;
-              transform: translateY(5px);
-            }
-            img{
-              height: 30px;
-              margin: 10px;
-            }
-            .prjDesc{
-              font-family: "Ubuntu", sans-serif;
-              margin-left: 4vw;
-              font-size: 4vw;
-            }
-            p:nth-child(2){
-              label{
-                font-size: 1vh;
-              }
-            }
-            
-          }
-          
-        }
-      }
-      
-    }
-  }
+		}
+		.gitCardHolder {
+			position: absolute;
+			height: 50vh;
+			width: 100vw;
+			justify-self: center;
+			margin-top: 18vh;
+
+			.gitCard {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				.projCards {
+					min-width: 60vw;
+					height: auto;
+					border-color: #3a5dd7;
+					border-radius: 10px;
+
+					margin-top: 5vw;
+					flex: 1;
+					text-align: left;
+					div {
+						font-family: "Righteous", cursive;
+						transform: translateY(5px);
+
+						.nameOfTheProject {
+							font-size: 5vw;
+							transform: translateY(5px);
+						}
+						img {
+							height: 30px;
+							margin: 10px;
+						}
+						.prjDesc {
+							font-family: "Ubuntu", sans-serif;
+							margin-left: 4vw;
+							font-size: 4vw;
+						}
+						p:nth-child(2) {
+							label {
+								font-size: 1vh;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 1200px) and (min-width: 500px) {
@@ -554,9 +593,9 @@ section:nth-child(3){
 				opacity: 0.9;
 			}
 		}
-  }
-  section:nth-child(3){
-    font-family: "Righteous", cursive;
+	}
+	section:nth-child(3) {
+		font-family: "Righteous", cursive;
 		.headline {
 			width: 100vw;
 			justify-content: center;
@@ -568,7 +607,7 @@ section:nth-child(3){
 				z-index: -200;
 				font-size: 20vh;
 				position: absolute;
-				transform: translate(0vh,-4vh);
+				transform: translate(0vh, -4vh);
 			}
 			.frontTitle {
 				color: #3a5dd7;
@@ -579,57 +618,54 @@ section:nth-child(3){
 				font-size: 15vh;
 				transform: translate(11vw, 5vh);
 			}
-    }
-    .gitCardHolder {
-      position: absolute;
-      height: 50vh;
-      width: 100vw;
-      justify-self: center;
-      margin-top: 18vh;
-      
-      .gitCard {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        .projCards {
-          min-width: 40vw;
-          height: auto;
-          border-color: #3a5dd7;
-          border-radius: 10px;
-          margin:5vw ;
-          
-          flex: 1;
-          text-align: left;
-          div{
-            font-family: "Righteous", cursive;
-            transform: translateY(5px);
-            
-            .nameOfTheProject{
-              font-size: 3vw;
-              transform: translateY(5px);
-            }
-            img{
-              height: 50px;
-              margin: 14px;
-            }
-            .prjDesc{
-              font-family: "Ubuntu", sans-serif;
-              margin-left: 4vw;
-              font-size: 2.2vw;
-            }
-            p:nth-child(2){
-              label{
-                font-size: 1vh;
-              }
-            }
-            
-          }
-          
-        }
-      }
-      
-    }
-  }
+		}
+		.gitCardHolder {
+			position: absolute;
+			height: 50vh;
+			width: 100vw;
+			justify-self: center;
+			margin-top: 18vh;
+
+			.gitCard {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				.projCards {
+					min-width: 40vw;
+					height: auto;
+					border-color: #3a5dd7;
+					border-radius: 10px;
+					margin: 5vw;
+
+					flex: 1;
+					text-align: left;
+					div {
+						font-family: "Righteous", cursive;
+						transform: translateY(5px);
+
+						.nameOfTheProject {
+							font-size: 3vw;
+							transform: translateY(5px);
+						}
+						img {
+							height: 50px;
+							margin: 14px;
+						}
+						.prjDesc {
+							font-family: "Ubuntu", sans-serif;
+							margin-left: 4vw;
+							font-size: 2.2vw;
+						}
+						p:nth-child(2) {
+							label {
+								font-size: 1vh;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @keyframes fadein {

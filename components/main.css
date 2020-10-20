@@ -226,7 +226,7 @@ section:nth-child(3) .gitCardHolder .gitCard .projCards {
   border-radius: 10px;
   margin-left: 1vw;
   margin-right: 1vw;
-  margin-top: 5vw;
+  margin-top: 3vw;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -250,6 +250,10 @@ section:nth-child(3) .gitCardHolder .gitCard .projCards div img {
   margin: 14px;
 }
 
+section:nth-child(3) .gitCardHolder .gitCard .projCards div .dipstats {
+  height: auto;
+}
+
 section:nth-child(3) .gitCardHolder .gitCard .projCards div .prjDesc {
   font-family: "Ubuntu", sans-serif;
   margin-left: 1.5vw;
@@ -258,6 +262,55 @@ section:nth-child(3) .gitCardHolder .gitCard .projCards div .prjDesc {
 
 section:nth-child(3) .gitCardHolder .gitCard .projCards div p:nth-child(2) label {
   font-size: 1vw;
+}
+
+section:nth-child(4) {
+  font-family: "Righteous", cursive;
+}
+
+section:nth-child(4) .headline {
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section:nth-child(4) .headline .backTitle {
+  color: #3a5dd7;
+  margin: 0 auto;
+  width: 100vw;
+  z-index: -200;
+  font-size: 15vh;
+  position: absolute;
+  -webkit-transform: translateX(-9vw);
+          transform: translateX(-9vw);
+  opacity: 0.1;
+}
+
+section:nth-child(4) .headline .frontTitle {
+  color: #3a5dd7;
+  margin: 0 auto;
+  width: 100vw;
+  z-index: 200;
+  position: absolute;
+  font-size: 7vh;
+  -webkit-transform: translate(4vw, 12vh);
+          transform: translate(4vw, 12vh);
+}
+
+section:nth-child(4) .img {
+  position: absolute;
+  background-image: url("/rishabh-2.jpeg");
+  height: 50vh;
+  width: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 25vh;
+  -webkit-transform: translateX(10vw);
+          transform: translateX(10vw);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 @media (max-width: 500px) {

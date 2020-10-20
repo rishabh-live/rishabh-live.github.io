@@ -1,8 +1,9 @@
 import LINK from "next/link";
 import Gitdata from '../components/database/gitrepos.json'
+import Contact from '../components/Section/contact'
 
 export default function Indexpage() {
-  
+
   return (
 
     <>
@@ -39,7 +40,7 @@ export default function Indexpage() {
                   I am Rishabh. I am a Web Developer and I have worked with
                   HyperText Preproccesor (PHP), NodeJS and Java Server Pages
                   (JSP). I do have developed and maintained a website for
-                  <LINK href="https://languagenectar.com">
+                  <LINK href="https://languagenectar.com" target="_blank">
                     <a>
                       Gladiolus Langauge Nectar <sup>[!]</sup>
                     </a>
@@ -69,41 +70,59 @@ export default function Indexpage() {
           <div class="gitCardHolder">
             <div class="gitCard">
 
-                {Gitdata.map((gitDetail)=>{
-                  return <div class="projCards w3-card-4">
+              {Gitdata.map((gitDetail) => {
+                return <div class="projCards w3-card-4">
                   <div>
                     <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_326384.png&f=1&nofb=1" alt="Github Icon" />
                     <LINK href={gitDetail.html_url}><label class="nameOfTheProject"> {gitDetail.name} </label></LINK> <label class="w3-tag w3-yellow w3-card-2 w3-margin">
-                        {gitDetail.language}
-                              </label>
+                      {gitDetail.language}
+                    </label>
                     <p class="prjDesc">
                       {gitDetail.description}
-                          </p>
+                    </p>
                     <p>
                       <label class="w3-tag w3-green w3-card-2 w3-margin">
                         Created on : {gitDetail.created_at}
-                              </label>
+                      </label>
                       <label class="w3-tag w3-green w3-card-2 w3-margin">
                         Updated on : {gitDetail.updated_at}
-                              </label>
-                      
+                      </label>
+
                       <LINK href={gitDetail.html_url}>
                         <label class="w3-tag w3-black w3-card-2 w3-margin">
                           Open in Github
                           </label>
                       </LINK>
-  
+
                     </p>
                   </div>
                 </div>
 
-                })}
+              })}
 
-              
+              <div class="projCards w3-card-4">
+                <div>
+                  <div align="center"><img class="dipstats" src="https://github-readme-stats.vercel.app/api?username=rishabh-live&show_icons=true&count_private=true" align="center" /></div>
+                </div>
+              </div>
 
-
-
+              <div class="projCards w3-card-4">
+                <div>
+                  <div align="center"><img class="dipstats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabh-live" align="center" /></div>
+                </div>
+              </div>
             </div>
+          </div>
+        </center>
+      </section>
+      <section>
+        <center>
+          <div class="headline">
+            <div class="backTitle">Let's Talk</div>
+            <div class="frontTitle">Contact</div>
+          </div>
+          <div class="aboutCardHolder w3-card-4">
+
           </div>
         </center>
       </section>
