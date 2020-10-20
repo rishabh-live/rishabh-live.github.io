@@ -1,3 +1,3 @@
-import Homepage from './containers/Homepage';
+import Indexpage from './index';
 
-export default Homepage;
+export default Indexpage;
