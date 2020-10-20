@@ -166,6 +166,7 @@ section:nth-child(2) .aboutCardHolder .paragraphMobile {
 
 section:nth-child(3) {
   font-family: "Righteous", cursive;
+  height: auto;
 }
 
 section:nth-child(3) .headline {
