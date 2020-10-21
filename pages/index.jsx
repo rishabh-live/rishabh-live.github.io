@@ -1,13 +1,9 @@
 import LINK from "next/link";
-import Gitdata from '../components/database/gitrepos.json'
-import Contact from '../components/Section/contact'
-import {} from "../components/main.css";
+import Gitdata from "../components/database/gitrepos.json";
+import {} from "../components/homeIndexPage.css";
 
-
-export default function Indexpage() {
-  
+function Indexpage({ todos }) {
   return (
-
     <>
       <section>
         <center>
@@ -19,7 +15,11 @@ export default function Indexpage() {
               <p> Read My Blogs </p> <p> View My Slides </p> <p> Email me </p>
             </div>
             <div class="dp">
-              <img src="/rishabh.jpg" alt="Rishabh-Live | Rishabh" class="w3-card-4" />
+              <img
+                src="/rishabh.jpg"
+                alt="Rishabh-Live | Rishabh"
+                class="w3-card-4"
+              />
             </div>
           </div>
         </center>
@@ -36,7 +36,6 @@ export default function Indexpage() {
                 <img src="/about-dp.jpg" alt="Rishabh" />
               </div>
               <div class="aboutme">
-                {/*  */}
                 <br />
                 <label class="paragraph">
                   I am Rishabh. I am a Web Developer and I have worked with
@@ -71,73 +70,138 @@ export default function Indexpage() {
           </div>
           <div class="gitCardHolder">
             <div class="gitCard">
-
               {Gitdata.map((gitDetail) => {
-                return <div key={gitDetail.id} class="projCards w3-card-4">
-                  <div>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_326384.png&f=1&nofb=1" alt="Github Icon" />
-                    <LINK href={gitDetail.html_url}><label class="nameOfTheProject"> {gitDetail.name} </label></LINK> <label class="w3-tag w3-yellow w3-card-2 w3-margin">
-                      {gitDetail.language}
-                    </label>
-                    <p class="prjDesc">
-                      {gitDetail.description}
-                    </p>
-                    <p>
-                      <label class="w3-tag w3-green w3-card-2 w3-margin">
-                        Created on : {gitDetail.created_at}
-                      </label>
-                      <label class="w3-tag w3-green w3-card-2 w3-margin">
-                        Updated on : {gitDetail.updated_at}
-                      </label>
-
+                return (
+                  <div key={gitDetail.id} class="projCards w3-card-4">
+                    <div>
+                      <img
+                        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_326384.png&f=1&nofb=1"
+                        alt="Github Icon"
+                      />
                       <LINK href={gitDetail.html_url}>
-                        <label class="w3-tag w3-black w3-card-2 w3-margin">
-                          Open in Github
+                        <label class="nameOfTheProject">
+                          {" "}
+                          {gitDetail.name}{" "}
+                        </label>
+                      </LINK>{" "}
+                      <label class="w3-tag w3-yellow w3-card-2 w3-margin">
+                        {gitDetail.language}
+                      </label>
+                      <p class="prjDesc">{gitDetail.description}</p>
+                      <p>
+                        <label class="w3-tag w3-green w3-card-2 w3-margin">
+                          Created on : {gitDetail.created_at}
+                        </label>
+                        <label class="w3-tag w3-green w3-card-2 w3-margin">
+                          Updated on : {gitDetail.updated_at}
+                        </label>
+
+                        <LINK href={gitDetail.html_url}>
+                          <label class="w3-tag w3-black w3-card-2 w3-margin">
+                            Open in Github
                           </label>
-                      </LINK>
-
-                    </p>
+                        </LINK>
+                      </p>
+                    </div>
                   </div>
-                </div>
-
+                );
               })}
 
               <div class="projCards w3-card-4">
                 <div>
-                  <div align="center"><img class="dipstats" src="https://github-readme-stats.vercel.app/api?username=rishabh-live&show_icons=true&count_private=true" align="center" /></div>
+                  <div align="center">
+                    <img
+                      class="dipstats"
+                      src="https://github-readme-stats.vercel.app/api?username=rishabh-live&show_icons=true&count_private=true"
+                      align="center"
+                    />
+                  </div>
                 </div>
               </div>
 
               <div class="projCards w3-card-4">
                 <div>
-                  <div align="center"><img class="dipstats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabh-live" align="center" /></div>
+                  <div align="center">
+                    <img
+                      class="dipstats"
+                      src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabh-live"
+                      align="center"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </center>
       </section>
-      <section>
+
+      <section class="secThree">
         <center>
           <div class="headline">
-            <div class="backTitle">Let's Talk</div>
-            <div class="frontTitle">Contact</div>
+            <div class="backTitle">Blogs</div>
+            <div class="frontTitle">My Writtings</div>
           </div>
-          <div class="aboutCardHolder w3-card-4">
-             <div class="w3-card-4 w3-"></div>
+          <div class="gitCardHolder">
+            <div class="gitCard">
+              {todos.objects.map(({ slug, title, metadata }) => (
+                <div key="9" class="projCards w3-card-4">
+                  <div>
+                    <img src="/main-ico.png" alt="Website Main Icon" />
+                    <LINK as={"/blogs/" + slug} href="/">
+                      <label class="nameOfTheProject">{title}</label>
+                    </LINK>{" "}
+                    <p class="prjDesc">{metadata.excerpt}</p>
+                    <p>
+                      <label class="w3-tag w3-green w3-card-2 w3-margin">
+                        Posted on : <i>05 Aug 2020</i>
+                      </label>
+
+                      <LINK href="/" as={"/blogs/" + slug}>
+                        <label class="w3-tag w3-blue w3-card-2 w3-margin">
+                          Read More...
+                        </label>
+                      </LINK>
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </center>
       </section>
+      <div>
+        <h1>Sample List</h1>
+        <p>
+          <ul>
+            {
+              // todos.objects
+            }
+          </ul>
+        </p>
+      </div>
 
+      <div calss="fotter">
+        <center>
+          <label>
+            Made with <span class="heart">❤</span> by{" "}
+            <LINK as="/home" href="/">
+              Rishabh
+            </LINK>
+          </label>
+        </center>
+      </div>
     </>
   );
 }
 
-// Indexpage.getInitialProps = async (ctx) => {
-//     const res = await fetch('https://api.github.com/users/rishabh-live')
-//     const json = await res.json()
-//     return { stars: json.login}
-// }
+Indexpage.getInitialProps = async (ctx) => {
+  const res = await fetch(
+    "https://api.cosmicjs.com/v1/d8818620-13a9-11eb-b41c-a731de31859b/objects?pretty=true&limit=3&hide_metafields=true&type=posts&read_key=SYezoDh1zt67yCHo3UyBA6hgs4oJcH6QQdWrDx2qodo9zv936d&limit=20&props=slug,title,content,metadata,"
+  );
+  const todos = await res.json();
+
+  return { todos };
+};
 
 // Indexpage.getInitialProps = async (ctx) => {
 //   const res = await fetch('/database/gitrepos.json')
@@ -145,4 +209,15 @@ export default function Indexpage() {
 //   return { reslt: { repos: json.name } }
 // }
 
+// export async function getStaticProps(){
 
+//   const res = await fetch('https://api.cosmicjs.com/v1/d8818620-13a9-11eb-b41c-a731de31859b/objects?pretty=true&hide_metafields=true&type=posts&read_key=SYezoDh1zt67yCHo3UyBA6hgs4oJcH6QQdWrDx2qodo9zv936d&limit=20&props=slug,title,content,metadata,')
+//   const todos = await res.json()
+//   return {
+//     props: {
+//       todos,
+//     },
+//   }
+// }
+
+export default Indexpage;

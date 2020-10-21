@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           content="Official Website for rishabh.live This Theme is called as RiLive"
         />
-      </HEAD>{" "}
+      </HEAD>
       <Component {...pageProps} />
     </>
   );
