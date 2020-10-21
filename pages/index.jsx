@@ -1,9 +1,11 @@
 import LINK from "next/link";
 import Gitdata from '../components/database/gitrepos.json'
 import Contact from '../components/Section/contact'
+import {} from "../components/main.css";
+
 
 export default function Indexpage() {
-
+  
   return (
 
     <>
@@ -71,7 +73,7 @@ export default function Indexpage() {
             <div class="gitCard">
 
               {Gitdata.map((gitDetail) => {
-                return <div class="projCards w3-card-4">
+                return <div key={gitDetail.id} class="projCards w3-card-4">
                   <div>
                     <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_326384.png&f=1&nofb=1" alt="Github Icon" />
                     <LINK href={gitDetail.html_url}><label class="nameOfTheProject"> {gitDetail.name} </label></LINK> <label class="w3-tag w3-yellow w3-card-2 w3-margin">
@@ -122,7 +124,7 @@ export default function Indexpage() {
             <div class="frontTitle">Contact</div>
           </div>
           <div class="aboutCardHolder w3-card-4">
-
+             <div class="w3-card-4 w3-"></div>
           </div>
         </center>
       </section>
