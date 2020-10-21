@@ -340,12 +340,12 @@ section:nth-child(4) .gitCardHolder .gitCard {
 
 section:nth-child(4) .gitCardHolder .gitCard .projCards {
   min-width: 40vw;
-  height: auto;
+  height: 25vh;
   border-color: #3a5dd7;
   border-radius: 10px;
   margin-left: 1vw;
   margin-right: 1vw;
-  margin-top: 2vw;
+  margin-top: 5vw;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -380,7 +380,7 @@ section:nth-child(4) .gitCardHolder .gitCard .projCards div .prjDesc {
 }
 
 section:nth-child(4) .gitCardHolder .gitCard .projCards div p:nth-child(2) label {
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 section:nth-child(4) .gitCardHolder .gitCard .projCards:nth-child(3) {

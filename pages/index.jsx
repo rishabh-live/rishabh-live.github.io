@@ -2,7 +2,11 @@ import LINK from "next/link";
 import Gitdata from "../components/database/gitrepos.json";
 import {} from "../components/homeIndexPage.css";
 
+
+
 function Indexpage({ todos }) {
+var key = 0
+
   return (
     <>
       <section>
@@ -90,10 +94,10 @@ function Indexpage({ todos }) {
                       <p class="prjDesc">{gitDetail.description}</p>
                       <p>
                         <label class="w3-tag w3-green w3-card-2 w3-margin">
-                          Created on : {gitDetail.created_at.substring(0,10)}
+                          Created on : {gitDetail.created_at.substring(0, 10)}
                         </label>
                         <label class="w3-tag w3-green w3-card-2 w3-margin">
-                          Updated on : {gitDetail.updated_at.substring(0,10)}
+                          Updated on : {gitDetail.updated_at.substring(0, 10)}
                         </label>
 
                         <LINK href={gitDetail.html_url}>
@@ -143,31 +147,37 @@ function Indexpage({ todos }) {
           </div>
           <div class="gitCardHolder">
             <div class="gitCard">
-              {todos.objects.map(({ slug, title, metadata }) => (
-                <div key="9" class="projCards w3-card-4">
-                  <div>
-                    <img src="/main-ico.png" alt="Website Main Icon" />
-                    <LINK href={"/blogs/" + slug} >
-                      <label class="nameOfTheProject">{title}</label>
-                    </LINK>{" "}
-                    <p class="prjDesc">{metadata.excerpt}</p>
-                    <p>
-                    <label class="w3-tag w3-green w3-card-2 w3-margin">
-                        Author : {metadata.author.title}
-                      </label>
-                      <label class="w3-tag w3-green w3-card-2 w3-margin">
-                        Posted on : <i>{metadata.author.created.substring(0,10)}</i>
-                      </label>
+              {todos.objects.map(({  slug, title, metadata }) => {
+                key = key +1
+                if (key <= 4) {
+                  return (
+                    <div key={key} class="projCards w3-card-4">
+                      <div>
+                        <img src="/main-ico.png" alt="Website Main Icon" />
+                        <LINK href={"/blogs/" + slug}>
+                          <label class="nameOfTheProject">{title}</label>
+                        </LINK>{" "}
+                        <p class="prjDesc">{metadata.excerpt}</p>
+                        <p>
+                          <label class="w3-tag w3-green w3-card-2 w3-margin">
+                            Author : {metadata.author.title}
+                          </label>
+                          <label class="w3-tag w3-green w3-card-2 w3-margin">
+                            Posted on :{" "}
+                            <i>{metadata.author.created.substring(0, 10)}</i>
+                          </label>
 
-                      <LINK href={"/blogs/" + slug}>
-                        <label class="w3-tag w3-blue w3-card-2 w3-margin">
-                          Read More...
-                        </label>
-                      </LINK>
-                    </p>
-                  </div>
-                </div>
-              ))}
+                          <LINK href={"/blogs/" + slug}>
+                            <label class="w3-tag w3-blue w3-card-2 w3-margin">
+                              Read More...
+                            </label>
+                          </LINK>
+                        </p>
+                      </div>
+                    </div>
+                  )
+                  }
+              })}
             </div>
           </div>
         </center>

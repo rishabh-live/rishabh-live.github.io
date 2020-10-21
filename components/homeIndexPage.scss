@@ -260,12 +260,12 @@ section:nth-child(4) {
             flex-wrap: wrap;
             .projCards {
                 min-width: 40vw;
-                height: auto;
+                height: 25vh;
                 border-color: #3a5dd7;
                 border-radius: 10px;
                 margin-left: 1vw;
                 margin-right: 1vw;
-                margin-top: 2vw;
+                margin-top: 5vw;
                 flex: 1;
                 text-align: left;
                 div {
@@ -289,7 +289,7 @@ section:nth-child(4) {
                     }
                     p:nth-child(2) {
                         label {
-                            font-size: 1vw;
+                            font-size: 1.2vw;
                         }
                     }
                 }
