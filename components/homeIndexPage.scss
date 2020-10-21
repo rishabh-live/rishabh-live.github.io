@@ -259,24 +259,24 @@ section:nth-child(4) {
             flex-direction: row;
             flex-wrap: wrap;
             .projCards {
-                min-width: 25vw;
+                min-width: 40vw;
                 height: auto;
                 border-color: #3a5dd7;
                 border-radius: 10px;
                 margin-left: 1vw;
                 margin-right: 1vw;
-                margin-top: 3vw;
+                margin-top: 2vw;
                 flex: 1;
                 text-align: left;
                 div {
                     font-family: "Righteous", cursive;
                     transform: translateY(5px);
                     .nameOfTheProject {
-                        font-size: 1.5vw;
+                        font-size: 1.3vw;
                         transform: translateY(5px);
                     }
                     img {
-                        height: 40px;
+                        height: 4vh;
                         margin: 14px;
                     }
                     .dipstats {
@@ -284,8 +284,8 @@ section:nth-child(4) {
                     }
                     .prjDesc {
                         font-family: "Ubuntu", sans-serif;
-                        margin-left: 1.5vw;
-                        font-size: 1vw;
+                        margin-left: 1.2vw;
+                        font-size: 0.8vw;
                     }
                     p:nth-child(2) {
                         label {

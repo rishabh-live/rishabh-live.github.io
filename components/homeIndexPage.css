@@ -339,13 +339,13 @@ section:nth-child(4) .gitCardHolder .gitCard {
 }
 
 section:nth-child(4) .gitCardHolder .gitCard .projCards {
-  min-width: 25vw;
+  min-width: 40vw;
   height: auto;
   border-color: #3a5dd7;
   border-radius: 10px;
   margin-left: 1vw;
   margin-right: 1vw;
-  margin-top: 3vw;
+  margin-top: 2vw;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -359,13 +359,13 @@ section:nth-child(4) .gitCardHolder .gitCard .projCards div {
 }
 
 section:nth-child(4) .gitCardHolder .gitCard .projCards div .nameOfTheProject {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }
 
 section:nth-child(4) .gitCardHolder .gitCard .projCards div img {
-  height: 40px;
+  height: 4vh;
   margin: 14px;
 }
 
@@ -375,8 +375,8 @@ section:nth-child(4) .gitCardHolder .gitCard .projCards div .dipstats {
 
 section:nth-child(4) .gitCardHolder .gitCard .projCards div .prjDesc {
   font-family: "Ubuntu", sans-serif;
-  margin-left: 1.5vw;
-  font-size: 1vw;
+  margin-left: 1.2vw;
+  font-size: 0.8vw;
 }
 
 section:nth-child(4) .gitCardHolder .gitCard .projCards div p:nth-child(2) label {

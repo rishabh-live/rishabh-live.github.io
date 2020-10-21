@@ -90,10 +90,10 @@ function Indexpage({ todos }) {
                       <p class="prjDesc">{gitDetail.description}</p>
                       <p>
                         <label class="w3-tag w3-green w3-card-2 w3-margin">
-                          Created on : {gitDetail.created_at}
+                          Created on : {gitDetail.created_at.substring(0,10)}
                         </label>
                         <label class="w3-tag w3-green w3-card-2 w3-margin">
-                          Updated on : {gitDetail.updated_at}
+                          Updated on : {gitDetail.updated_at.substring(0,10)}
                         </label>
 
                         <LINK href={gitDetail.html_url}>
@@ -147,16 +147,19 @@ function Indexpage({ todos }) {
                 <div key="9" class="projCards w3-card-4">
                   <div>
                     <img src="/main-ico.png" alt="Website Main Icon" />
-                    <LINK as={"/blogs/" + slug} href="/">
+                    <LINK href={"/blogs/" + slug} >
                       <label class="nameOfTheProject">{title}</label>
                     </LINK>{" "}
                     <p class="prjDesc">{metadata.excerpt}</p>
                     <p>
+                    <label class="w3-tag w3-green w3-card-2 w3-margin">
+                        Author : {metadata.author.title}
+                      </label>
                       <label class="w3-tag w3-green w3-card-2 w3-margin">
-                        Posted on : <i>05 Aug 2020</i>
+                        Posted on : <i>{metadata.author.created.substring(0,10)}</i>
                       </label>
 
-                      <LINK href="/" as={"/blogs/" + slug}>
+                      <LINK href={"/blogs/" + slug}>
                         <label class="w3-tag w3-blue w3-card-2 w3-margin">
                           Read More...
                         </label>
@@ -169,17 +172,6 @@ function Indexpage({ todos }) {
           </div>
         </center>
       </section>
-      <div>
-        <h1>Sample List</h1>
-        <p>
-          <ul>
-            {
-              // todos.objects
-            }
-          </ul>
-        </p>
-      </div>
-
       <div calss="fotter">
         <center>
           <label>
@@ -196,7 +188,7 @@ function Indexpage({ todos }) {
 
 Indexpage.getInitialProps = async (ctx) => {
   const res = await fetch(
-    "https://api.cosmicjs.com/v1/d8818620-13a9-11eb-b41c-a731de31859b/objects?pretty=true&limit=3&hide_metafields=true&type=posts&read_key=SYezoDh1zt67yCHo3UyBA6hgs4oJcH6QQdWrDx2qodo9zv936d&limit=20&props=slug,title,content,metadata,"
+    "https://api.cosmicjs.com/v1/d8818620-13a9-11eb-b41c-a731de31859b/objects?pretty=true&limit=4&hide_metafields=true&type=posts&read_key=SYezoDh1zt67yCHo3UyBA6hgs4oJcH6QQdWrDx2qodo9zv936d&limit=20&props=slug,title,content,metadata,"
   );
   const todos = await res.json();
 
