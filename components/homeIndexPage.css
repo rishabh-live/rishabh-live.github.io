@@ -94,7 +94,7 @@ section:nth-child(2) .headline {
 }
 
 section:nth-child(2) .headline .backTitle {
-  color: #d6ebf7;
+  color: #3a5dd7;
   margin: 0 auto;
   width: 100vw;
   z-index: -200;
@@ -102,6 +102,7 @@ section:nth-child(2) .headline .backTitle {
   position: absolute;
   -webkit-transform: translateX(-9vw);
           transform: translateX(-9vw);
+  opacity: 0.1;
 }
 
 section:nth-child(2) .headline .frontTitle {
