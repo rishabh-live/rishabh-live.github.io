@@ -206,11 +206,9 @@ function Indexpage({ todos }) {
             </LINK>
           </label>
         </center>
-      </div>{" "}
-      <button onclick="topFunction()" id="myBtn" title="Go to top">
-        Top
-      </button>
-      <script src="./btt.js"/>
+      </div>
+      
+      
     </>
   );
 }
