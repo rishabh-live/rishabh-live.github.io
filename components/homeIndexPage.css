@@ -624,9 +624,6 @@ section:nth-child(4) .gitCardHolder .gitCard .projCards:nth-child(3) {
   section:nth-child(3) .gitCardHolder .gitCard .projCards div .dipstats {
     width: 90vw;
   }
-  section:nth-child(3) .gitCardHolder .gitCard .projCards:nth-child(3) {
-    display: none;
-  }
 }
 
 @media (max-width: 1200px) and (min-width: 500px) {
