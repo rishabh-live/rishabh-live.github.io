@@ -22,7 +22,7 @@ var key = 0
               <img
                 src="/rishabh.jpg"
                 alt="Rishabh-Live | Rishabh"
-                class="w3-card-4"
+                class="w3-card-4" align="center"
               />
             </div>
           </div>
@@ -117,7 +117,8 @@ var key = 0
                     <img
                       class="dipstats"
                       src="https://github-readme-stats.vercel.app/api?username=rishabh-live&show_icons=true&count_private=true"
-                      align="center" class="myGitStats"
+                      align="center" 
+                      
                     />
                   </div>
                 </div>
@@ -139,7 +140,7 @@ var key = 0
         </center>
       </section>
 
-      <section class="secThree">
+      {/* <section class="secThree">
         <center>
           <div class="headline">
             <div class="backTitle">Blogs</div>
@@ -181,7 +182,7 @@ var key = 0
             </div>
           </div>
         </center>
-      </section>
+      </section> */}
       <div calss="fotter">
         <center>
           <label>

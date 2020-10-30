@@ -6,7 +6,7 @@ import LINK from "next/link";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <html lang="en-US">
       <HEAD>
         <title> Rishabh - live | Rishabh | rishabh.live </title>
         <link rel="icon" href="/main-ico.png" />
@@ -21,6 +21,6 @@ export default function App({ Component, pageProps }) {
         />
       </HEAD>
       <Component {...pageProps} />
-    </>
+    </html>
   );
 }
