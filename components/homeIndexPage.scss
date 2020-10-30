@@ -321,7 +321,6 @@ section:nth-child(4) {
                     height: auto;
                     animation: loadimgmob 0.7s linear;
                     flex: 1;
-                    transform: translateX(0vw);
                 }
             }
             .menu {
@@ -490,6 +489,9 @@ section:nth-child(4) {
                             label {
                                 font-size: 1vh;
                             }
+                        }
+                        .myGitStats {
+                            width: 100vw;
                         }
                     }
                 }

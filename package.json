@@ -14,7 +14,8 @@
         "react": "^16.14.0",
         "react-bootstrap": "^1.3.0",
         "react-dom": "^16.14.0",
-        "scroll-out": "^2.2.12"
+        "scroll-out": "^2.2.12",
+        "showdown": "^1.9.1"
     },
     "devDependencies": {},
     "scripts": {

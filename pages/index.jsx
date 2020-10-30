@@ -117,7 +117,7 @@ var key = 0
                     <img
                       class="dipstats"
                       src="https://github-readme-stats.vercel.app/api?username=rishabh-live&show_icons=true&count_private=true"
-                      align="center"
+                      align="center" class="myGitStats"
                     />
                   </div>
                 </div>
