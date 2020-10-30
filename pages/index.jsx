@@ -109,16 +109,16 @@ function Indexpage({ todos }) {
                       </label>
                       <p class="prjDesc">{gitDetail.description}</p>
                       <p>
-                        <label class="w3-tag w3-green w3-card-2 w3-margin">
+                        {/* <label class="w3-tag w3-green w3-card-2 w3-margin">
                           Created on : {gitDetail.created_at.substring(0, 10)}
-                        </label>
+                        </label> */}
                         <label class="w3-tag w3-green w3-card-2 w3-margin">
-                          Updated on : {gitDetail.updated_at.substring(0, 10)}
+                          Last Updated : {gitDetail.updated_at.substring(0, 10)}
                         </label>
 
                         <LINK href={gitDetail.html_url}>
                           <label class="w3-tag w3-black w3-card-2 w3-margin">
-                            Open in Github
+                            Open on Github
                           </label>
                         </LINK>
                       </p>
