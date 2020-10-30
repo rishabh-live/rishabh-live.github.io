@@ -2,10 +2,8 @@ import LINK from "next/link";
 import Gitdata from "../components/database/gitrepos.json";
 import {} from "../components/homeIndexPage.css";
 
-
-
 function Indexpage({ todos }) {
-var key = 0
+  var key = 0;
 
   return (
     <>
@@ -16,19 +14,37 @@ var key = 0
           </div>
           <div class="holder">
             <div class="menu">
-              <p> Read My Blogs </p> <p> View My Slides </p> <p> Email me </p>
+              <p>
+                {" "}
+                <LINK href="#about">
+                  <a>About Me</a>
+                </LINK>
+              </p>{" "}
+              <p>
+                {" "}
+                <LINK href="#projects">
+                  <a>My Works</a>
+                </LINK>{" "}
+              </p>{" "}
+              <p>
+                {" "}
+                <LINK href="mailto:rishabh12536@gmail.com">
+                  <a>Email Me</a>
+                </LINK>{" "}
+              </p>
             </div>
             <div class="dp">
               <img
                 src="/rishabh.jpg"
                 alt="Rishabh-Live | Rishabh"
-                class="w3-card-4" align="center"
+                class="w3-card-4"
+                align="center"
               />
             </div>
           </div>
         </center>
       </section>
-      <section>
+      <section id="about">
         <center>
           <div class="headline">
             <div class="backTitle">About</div>
@@ -44,7 +60,7 @@ var key = 0
                 <label class="paragraph">
                   I am Rishabh. I am a Web Developer and I have worked with
                   HyperText Preproccesor (PHP), NodeJS and Java Server Pages
-                  (JSP). I do have developed and maintained a website for
+                  (JSP). I do have developed and maintained a website for{" "}
                   <LINK href="https://languagenectar.com" target="_blank">
                     <a>
                       Gladiolus Langauge Nectar <sup>[!]</sup>
@@ -56,7 +72,7 @@ var key = 0
             <label class="paragraphMobile">
               I am Rishabh. I am a Web Developer and I have worked with
               HyperText Preproccesor (PHP), NodeJS and Java Server Pages (JSP).
-              I do have developed and maintained a website for
+              I do have developed and maintained a website for{" "}
               <LINK href="https://languagenectar.com">
                 <a>
                   Gladiolus Langauge Nectar <sup>[!]</sup>
@@ -66,7 +82,7 @@ var key = 0
           </div>
         </center>
       </section>
-      <section class="secThree">
+      <section id="projects" class="secThree">
         <center>
           <div class="headline">
             <div class="backTitle">Projects</div>
@@ -117,8 +133,7 @@ var key = 0
                     <img
                       class="dipstats"
                       src="https://github-readme-stats.vercel.app/api?username=rishabh-live&show_icons=true&count_private=true"
-                      align="center" 
-                      
+                      align="center"
                     />
                   </div>
                 </div>
@@ -139,7 +154,6 @@ var key = 0
           </div>
         </center>
       </section>
-
       {/* <section class="secThree">
         <center>
           <div class="headline">
@@ -192,7 +206,11 @@ var key = 0
             </LINK>
           </label>
         </center>
-      </div>
+      </div>{" "}
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        Top
+      </button>
+      <script src="./btt.js"/>
     </>
   );
 }
