@@ -230,14 +230,14 @@ function Indexpage({ todos }) {
   );
 }
 
-Indexpage.getInitialProps = async (ctx) => {
-  const res = await fetch(
-    "https://api.cosmicjs.com/v1/d8818620-13a9-11eb-b41c-a731de31859b/objects?pretty=true&limit=4&hide_metafields=true&type=posts&read_key=SYezoDh1zt67yCHo3UyBA6hgs4oJcH6QQdWrDx2qodo9zv936d&limit=20&props=slug,title,content,metadata,"
-  );
-  const todos = await res.json();
+// Indexpage.getInitialProps = async (ctx) => {
+//   const res = await fetch(
+//     "https://api.cosmicjs.com/v1/d8818620-13a9-11eb-b41c-a731de31859b/objects?pretty=true&limit=4&hide_metafields=true&type=posts&read_key=SYezoDh1zt67yCHo3UyBA6hgs4oJcH6QQdWrDx2qodo9zv936d&limit=20&props=slug,title,content,metadata,"
+//   );
+//   const todos = await res.json();
 
-  return { todos };
-};
+//   return { todos };
+// };
 
 
 export default Indexpage;
