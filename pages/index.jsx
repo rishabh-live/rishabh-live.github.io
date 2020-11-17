@@ -1,12 +1,30 @@
 import LINK from "next/link";
 import Gitdata from "../components/database/gitrepos.json";
 import {} from "../components/homeIndexPage.css";
+import HEAD from "next/head";
 
 function Indexpage({ todos }) {
   var key = 0;
 
   return (
     <>
+      <HEAD>
+        <title> Rishabh - live | Rishabh | rishabh.live </title>
+        <link rel="icon" href="/main-ico.png" />
+        <meta name="title" content="Rishabh | rishabh-live | rishabh.live" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta
+          name="keywords"
+          content="rishabh, student, smit, sikkim, manipal, institute, technology, it ,information technology,"
+        />
+        <meta
+          name="description"
+          content="I am Rishabh. Student of Information Tecnology at Sikkim Manipal Institute of Technology aka SMIT. Also a Web Developer at GLadiolus Langauge Nectar"
+        />
+      </HEAD>
       <section>
         <center>
           <div class="line">
@@ -197,7 +215,7 @@ function Indexpage({ todos }) {
           </div>
         </center>
       </section> */}
-      <div calss="fotter">
+      <div class="fotter">
         <center>
           <label>
             Made with <span class="heart">❤</span> by{" "}
@@ -207,7 +225,6 @@ function Indexpage({ todos }) {
           </label>
         </center>
       </div>
-      
       
     </>
   );
@@ -222,21 +239,5 @@ Indexpage.getInitialProps = async (ctx) => {
   return { todos };
 };
 
-// Indexpage.getInitialProps = async (ctx) => {
-//   const res = await fetch('/database/gitrepos.json')
-//   const json = await res.json()
-//   return { reslt: { repos: json.name } }
-// }
-
-// export async function getStaticProps(){
-
-//   const res = await fetch('https://api.cosmicjs.com/v1/d8818620-13a9-11eb-b41c-a731de31859b/objects?pretty=true&hide_metafields=true&type=posts&read_key=SYezoDh1zt67yCHo3UyBA6hgs4oJcH6QQdWrDx2qodo9zv936d&limit=20&props=slug,title,content,metadata,')
-//   const todos = await res.json()
-//   return {
-//     props: {
-//       todos,
-//     },
-//   }
-// }
 
 export default Indexpage;
