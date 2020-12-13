@@ -14,6 +14,7 @@ html::-webkit-scrollbar {
 }
 
 section {
+    min-height: 100vh;
     max-width: 100vw;
     overflow: auto;
 }
@@ -146,7 +147,7 @@ section:nth-child(2) {
 
 section:nth-child(3) {
     font-family: "Righteous", cursive;
-    height: auto;
+    max-height: initial;
     .headline {
         width: 100vw;
         justify-content: center;
@@ -224,82 +225,8 @@ section:nth-child(3) {
 }
 
 section:nth-child(4) {
-    font-family: "Righteous", cursive;
-    height: auto;
-    .headline {
-        width: 100vw;
-        justify-content: center;
-        .backTitle {
-            color: #3a5dd7;
-            margin: 0 auto;
-            width: 100vw;
-            z-index: -200;
-            font-size: 15vh;
-            position: absolute;
-            transform: translateX(-9vw);
-            opacity: 0.1;
-        }
-        .frontTitle {
-            color: #3a5dd7;
-            margin: 0 auto;
-            width: 100vw;
-            z-index: 200;
-            position: absolute;
-            font-size: 7vh;
-            transform: translate(4vw, 12vh);
-        }
-    }
-    .gitCardHolder {
-        position: absolute;
-        height: 50vh;
-        width: 100vw;
-        justify-self: center;
-        margin-top: 18vh;
-        .gitCard {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            .projCards {
-                min-width: 40vw;
-                height: 25vh;
-                border-color: #3a5dd7;
-                border-radius: 10px;
-                margin-left: 1vw;
-                margin-right: 1vw;
-                margin-top: 5vw;
-                flex: 1;
-                text-align: left;
-                div {
-                    font-family: "Righteous", cursive;
-                    transform: translateY(5px);
-                    .nameOfTheProject {
-                        font-size: 1.3vw;
-                        transform: translateY(5px);
-                    }
-                    img {
-                        height: 4vh;
-                        margin: 14px;
-                    }
-                    .dipstats {
-                        height: auto;
-                    }
-                    .prjDesc {
-                        font-family: "Ubuntu", sans-serif;
-                        margin-left: 1.2vw;
-                        font-size: 0.8vw;
-                    }
-                    p:nth-child(2) {
-                        label {
-                            font-size: 1.2vw;
-                        }
-                    }
-                }
-            }
-            .projCards:nth-child(3) {
-                display: block;
-            }
-        }
-    }
+    min-height: 1vh;
+    max-height: 2vh;
 }
 
 @media (max-width: 500px) {
