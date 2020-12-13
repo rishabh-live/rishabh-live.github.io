@@ -7,7 +7,7 @@ module.exports = withCSS({
     }
 });
 
-module.exports = {
-    basePath: '/rishabh-live.github.io',
-    assetPrefix: '/rishabh-live.github.io'
-}
+// module.exports = {
+//     basePath: '/rishabh-live.github.io',
+//     assetPrefix: '/rishabh-live.github.io'
+// }
