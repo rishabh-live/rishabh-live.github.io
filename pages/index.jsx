@@ -10,6 +10,7 @@ function Indexpage({ todos }) {
     <>
       <HEAD>
         <title> Rishabh - live | Rishabh | rishabh.live </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Righteous&family=Chilanka&family=Sansita+Swashed&family=Dancing+Script:wght@500&family=Ubuntu:ital@1&display=swap" />
         <link rel="icon" href="/main-ico.png" />
         <meta name="title" content="Rishabh | rishabh-live | rishabh.live" />
         <meta
