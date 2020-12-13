@@ -6,3 +6,8 @@ module.exports = withCSS({
         url: false
     }
 });
+
+module.exports = {
+    basePath: '/rishabh-live.github.io',
+    assetPrefix: '/rishabh-live.github.io'
+}
