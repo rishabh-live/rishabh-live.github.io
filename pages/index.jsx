@@ -14,7 +14,7 @@ function Indexpage({ todos }) {
         <meta name="title" content="Rishabh | rishabh-live | rishabh.live" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          content="width=device-width, initial-scale=1.0, maximum-scale=6.0"
         />
         <meta
           name="keywords"
@@ -35,18 +35,18 @@ function Indexpage({ todos }) {
               <p>
                 {" "}
                 <LINK href="#about">
-                  <a>About Me</a>
+                  <a href="#about">About Me</a>
                 </LINK>
               </p>{" "}
               <p>
                 {" "}
                 <LINK href="#projects">
-                  <a>My Works</a>
+                  <a href="#projects">My Works</a>
                 </LINK>{" "}
               </p>{" "}
               <p>
                 {" "}
-                <LINK href="mailto:rishabh12536@gmail.com">
+                <LINK href="mailto:rishabh0508@hotmail.com?subject=I%20am%20an%20Angel&body=Hey%20Rishabh%2C%0D%0A%0D%0AI%20am%20Angel.%20And%20wanted%20to%20say%20that%20...%0D%0A%0D%0A%0D%0ARegards%2C%0D%0AAngel.">
                   <a>Email Me</a>
                 </LINK>{" "}
               </p>
@@ -152,6 +152,7 @@ function Indexpage({ todos }) {
                       class="dipstats"
                       src="https://github-readme-stats.vercel.app/api?username=rishabh-live&show_icons=true&count_private=true"
                       align="center"
+                      alt="Github Stats"
                     />
                   </div>
                 </div>
@@ -164,6 +165,7 @@ function Indexpage({ todos }) {
                       class="dipstats"
                       src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabh-live"
                       align="center"
+                      alt="Github Language Stats"
                     />
                   </div>
                 </div>
@@ -225,7 +227,6 @@ function Indexpage({ todos }) {
           </label>
         </center>
       </div>
-      
     </>
   );
 }
@@ -238,6 +239,5 @@ function Indexpage({ todos }) {
 
 //   return { todos };
 // };
-
 
 export default Indexpage;
