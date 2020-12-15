@@ -48,6 +48,11 @@ function Indexpage({ todos }) {
                 <LINK href="#projects">
                   <a href="#projects">My Works</a>
                 </LINK>{" "}
+              </p><p>
+                {" "}
+                <LINK href="/blogs">
+                  <a href="/blogs">My Articles</a>
+                </LINK>{" "}
               </p>{" "}
               <p>
                 {" "}
