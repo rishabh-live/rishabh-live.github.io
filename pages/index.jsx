@@ -228,7 +228,7 @@ function Indexpage({ todos }) {
           <center>
             <label>
               Made with <span class="heart">❤</span> by{" "}
-              <LINK as="/home" href="/">
+              <LINK  href="/blogs">
                 Rishabh
               </LINK>
             </label>

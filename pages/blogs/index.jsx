@@ -1,17 +1,19 @@
 import HEAD from "next/head";
-export default function Blogarcticale() {
+export default function Blogs() {
   return (
     <>
       <HEAD>
+          <title>Blog Posts | Rishabh.live | rishabh - live</title>
         <link rel="stylesheet" href="/assets/blogs/css/style.css" />
       </HEAD>
       <section>
-        <nav>
-            <div className="logo">
-                
+        <center>
+          <nav>
+            <div className="banner">
+              <img src="/assets/images/Banner-Linkedin.png" />
             </div>
-            <div className="menu"></div>
-        </nav>
+          </nav>
+        </center>
       </section>
     </>
   );
