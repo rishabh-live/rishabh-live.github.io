@@ -11,7 +11,7 @@ export default function Blogs() {
         <center>
           <nav>
             <div className="banner">
-              <img src="/assets/images/Banner-Classy.png" />
+              <img src="/assets/images/Banner-Classy.png" alt="rishabh live classy style banner"/>
             </div>
           </nav>
         </center>
