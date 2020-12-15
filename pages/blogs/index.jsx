@@ -5,7 +5,6 @@ export default function Blogs() {
       <HEAD>
         <title>Blog Posts | Rishabh.live | rishabh - live</title>
         <link rel="icon" href="/main-ico.png" />
-        <link rel="stylesheet" href="/assets/global/css/w3.min.css" />
         <link rel="stylesheet" href="/assets/blogs/css/style.css" />
       </HEAD>
       <section>
