@@ -1,6 +1,5 @@
 import LINK from "next/link";
 import Gitdata from "../components/database/gitrepos.json";
-import {} from "../components/homeIndexPage.css";
 import HEAD from "next/head";
 
 function Indexpage({ todos }) {
@@ -15,6 +14,8 @@ function Indexpage({ todos }) {
           href="https://fonts.googleapis.com/css2?family=Righteous&family=Chilanka&family=Sansita+Swashed&family=Dancing+Script:wght@500&family=Ubuntu:ital@1&display=swap"
         />
         <link rel="icon" href="/main-ico.png" />
+        <link rel="stylesheet" href="/assets/global/css/w3.min.css" />
+        <link rel="stylesheet" href="/assets/main/css/homeIndexPage.css" />
         <meta name="title" content="Rishabh | rishabh-live | rishabh.live" />
         <meta
           name="viewport"
