@@ -11,7 +11,7 @@ export default function Blogs() {
         <center>
           <nav>
             <div className="banner">
-              <img src="/assets/images/Banner-Linkedin.png" />
+              <img src="/assets/images/Banner-Classy.png" />
             </div>
           </nav>
         </center>
