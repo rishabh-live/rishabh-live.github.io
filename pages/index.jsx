@@ -16,6 +16,7 @@ function Indexpage({ todos }) {
         <link rel="icon" href="/main-ico.png" />
         <link rel="stylesheet" href="/assets/global/css/w3.min.css" />
         <link rel="stylesheet" href="/assets/main/css/homeIndexPage.css" />
+        <link rel="stylesheet" href="/assets/blogs/css/style.css" />
         <meta name="title" content="Rishabh | rishabh-live | rishabh.live" />
         <meta
           name="viewport"
@@ -30,7 +31,7 @@ function Indexpage({ todos }) {
           content="I am Rishabh. Student of Information Tecnology at Sikkim Manipal Institute of Technology aka SMIT. Also a Web Developer at GLadiolus Langauge Nectar"
         />
       </HEAD>
-      <section>
+      <section className="main-page-section-one">
         <center>
           <div class="line">
             <label>Hi, I am Rishabh. </label>
@@ -48,7 +49,8 @@ function Indexpage({ todos }) {
                 <LINK href="#projects">
                   <a href="#projects">My Works</a>
                 </LINK>{" "}
-              </p><p>
+              </p>
+              <p>
                 {" "}
                 <LINK href="/blogs">
                   <a href="/blogs">My Articles</a>
@@ -72,7 +74,7 @@ function Indexpage({ todos }) {
           </div>
         </center>
       </section>
-      <section id="about">
+      <section id="about" className="main-page-section-two">
         <center>
           <div class="headline">
             <div class="backTitle">About</div>
@@ -110,7 +112,7 @@ function Indexpage({ todos }) {
           </div>
         </center>
       </section>
-      <section id="projects" class="secThree">
+      <section id="projects" className="main-page-section-three secThree">
         <center>
           <div class="headline">
             <div class="backTitle">Projects</div>
@@ -227,15 +229,13 @@ function Indexpage({ todos }) {
           </div>
         </center>
       </section> */}
-      <section>
+      <section className="main-page-section-four">
         {" "}
         <div class="fotter">
           <center>
             <label>
               Made with <span class="heart">❤</span> by{" "}
-              <LINK  href="/blogs">
-                Rishabh
-              </LINK>
+              <LINK href="/blogs">Rishabh</LINK>
             </label>
           </center>
         </div>

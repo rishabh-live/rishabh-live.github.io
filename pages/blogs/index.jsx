@@ -8,7 +8,7 @@ export default function Blogs() {
         <link rel="icon" href="/main-ico.png" />
         <link rel="stylesheet" href="/assets/blogs/css/style.css" />
       </HEAD>
-      <section>
+      <section className="blogs-section-one">
         <center>
           <nav>
             <div className="banner">
@@ -20,7 +20,7 @@ export default function Blogs() {
           </nav>
         </center>
       </section>
-      <section>
+      <section className="blogs-section-two">
         <center>
           <div className="mainCard">
             <div className="blogCard">
