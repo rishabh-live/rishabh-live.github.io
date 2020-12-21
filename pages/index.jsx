@@ -14,7 +14,7 @@ function Indexpage({ todos }) {
           href="https://fonts.googleapis.com/css2?family=Righteous&family=Chilanka&family=Sansita+Swashed&family=Dancing+Script:wght@500&family=Ubuntu:ital@1&display=swap"
         />
         <link rel="icon" href="/main-ico.png" />
-        <link rel="stylesheet" href="/assets/global/css/w3.min.css" />
+
         <link rel="stylesheet" href="/assets/main/css/homeIndexPage.css" />
         <link rel="stylesheet" href="/assets/blogs/css/style.css" />
         <meta name="title" content="Rishabh | rishabh-live | rishabh.live" />
@@ -129,11 +129,8 @@ function Indexpage({ todos }) {
                         alt="Github Icon"
                       />
                       <LINK href={gitDetail.html_url}>
-                        <label class="nameOfTheProject">
-                          {" "}
-                          {gitDetail.name}{" "}
-                        </label>
-                      </LINK>{" "}
+                        <label class="nameOfTheProject">{gitDetail.name}</label>
+                      </LINK>
                       <label class="w3-tag w3-yellow w3-card-2 w3-margin">
                         {gitDetail.language}
                       </label>
@@ -145,7 +142,6 @@ function Indexpage({ todos }) {
                         <label class="w3-tag w3-green w3-card-2 w3-margin">
                           Last Updated : {gitDetail.updated_at.substring(0, 10)}
                         </label>
-
                         <LINK href={gitDetail.html_url}>
                           <label class="w3-tag w3-black w3-card-2 w3-margin">
                             Open on Github
@@ -157,7 +153,7 @@ function Indexpage({ todos }) {
                 );
               })}
 
-              <div class="projCards w3-card-4">
+              <div className="projCards w3-card-4">
                 <div>
                   <div align="center">
                     <img
@@ -170,12 +166,12 @@ function Indexpage({ todos }) {
                 </div>
               </div>
 
-              <div class="projCards w3-card-4">
+              <div className="projCards w3-card-4">
                 <div>
                   <div align="center">
                     <img
                       class="dipstats"
-                      src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabh-live"
+                      src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabh-live&layout=compact"
                       align="center"
                       alt="Github Language Stats"
                     />
@@ -229,17 +225,6 @@ function Indexpage({ todos }) {
           </div>
         </center>
       </section> */}
-      <section className="main-page-section-four">
-        {" "}
-        <div class="fotter">
-          <center>
-            <label>
-              Made with <span class="heart">❤</span> by{" "}
-              <LINK href="/blogs">Rishabh</LINK>
-            </label>
-          </center>
-        </div>
-      </section>
     </>
   );
 }

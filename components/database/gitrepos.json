@@ -25,7 +25,7 @@
             "site_admin": false
         },
         "html_url": "https://github.com/rishabh-live/2048-Game-AI",
-        "description": "Game Base of 2048 Game AI",
+        "description": "Game Base of 2048 Game AI and a Bot that tries to solve the 2048 game problem",
         "fork": false,
         "url": "https://api.github.com/repos/rishabh-live/2048-Game-AI",
         "forks_url": "https://api.github.com/repos/rishabh-live/2048-Game-AI/forks",
@@ -126,7 +126,7 @@
             "site_admin": false
         },
         "html_url": "https://github.com/rishabh-live/Instagram-Bio-Bot",
-        "description": null,
+        "description": "Instagram Bio Bot is a bot that updates the bio of the user when a specific photo/video is liked",
         "fork": false,
         "url": "https://api.github.com/repos/rishabh-live/Instagram-Bio-Bot",
         "forks_url": "https://api.github.com/repos/rishabh-live/Instagram-Bio-Bot/forks",
@@ -225,7 +225,7 @@
             "site_admin": false
         },
         "html_url": "https://github.com/rishabh-live/rishabh-live-nextjs",
-        "description": null,
+        "description": "This is the source code of the website that your are on, that is, this website",
         "fork": false,
         "url": "https://api.github.com/repos/rishabh-live/rishabh-live-nextjs",
         "forks_url": "https://api.github.com/repos/rishabh-live/rishabh-live-nextjs/forks",
