@@ -52,8 +52,10 @@ function Indexpage({ todos }) {
               </p>
               <p>
                 {" "}
-                <LINK href="/blogs">
-                  <a href="/blogs">My Articles</a>
+                <LINK href="https://github.com/rishabh-live/" target="_blank">
+                  <a href="https://github.com/rishabh-live/" target="_blank">
+                    My Github
+                  </a>
                 </LINK>{" "}
               </p>{" "}
               <p>
@@ -171,7 +173,7 @@ function Indexpage({ todos }) {
                   <div align="center">
                     <img
                       class="dipstats"
-                      src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabh-live&layout=compact"
+                      src="https://github-readme-streak-stats.herokuapp.com/?user=rishabh-live"
                       align="center"
                       alt="Github Language Stats"
                     />
