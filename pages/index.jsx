@@ -69,7 +69,7 @@ function Indexpage({ todos }) {
               <img
                 src="/rishabh.png"
                 alt="Rishabh-Live | Rishabh"
-                class="w3-card-4"
+                class="w3-card-4 shadow"
                 align="center"
               />
             </div>
@@ -82,8 +82,8 @@ function Indexpage({ todos }) {
             <div class="backTitle">About</div>
             <div class="frontTitle">Who M'I ?</div>
           </div>
-          <div class="aboutCardHolder w3-card-4">
-            <div class="w3-card-4 aboutCard">
+          <div class="aboutCardHolder w3-card-4 shadow">
+            <div class="w3-card-4 aboutCard shadow">
               <div class="mypic">
                 <img src="/about-dp.jpg" alt="Rishabh" />
               </div>
@@ -124,7 +124,7 @@ function Indexpage({ todos }) {
             <div class="gitCard">
               {Gitdata.map((gitDetail) => {
                 return (
-                  <div key={gitDetail.id} class="projCards w3-card-4">
+                  <div key={gitDetail.id} class="projCards w3-card-4 shadow">
                     <div>
                       <img
                         src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_326384.png&f=1&nofb=1"
@@ -155,7 +155,7 @@ function Indexpage({ todos }) {
                 );
               })}
 
-              <div className="projCards w3-card-4">
+              <div className="projCards w3-card-4 shadow">
                 <div>
                   <div align="center">
                     <img
@@ -168,7 +168,7 @@ function Indexpage({ todos }) {
                 </div>
               </div>
 
-              <div className="projCards w3-card-4">
+              <div className="projCards w3-card-4 shadow">
                 <div>
                   <div align="center">
                     <img
