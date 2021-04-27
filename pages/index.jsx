@@ -191,7 +191,7 @@ function Indexpage({ todos }) {
           </div>
         </center>
       </section>
-      <script src="assets/main/js/particles.js"></script>
+     
       {/* <section class="secThree">
         <center>
           <div class="headline">
