@@ -21,9 +21,8 @@ section {
 
 .main-page-section-one {
   max-height: 100vh;
-  background: none;
   font-family: "Righteous", cursive;
-  background-color: rgba(5, 143, 255, 0.938);
+  background: linear-gradient(45deg, #43a9ec 5%, #63e70a 25%);
 }
 
 .main-page-section-one .line label {
