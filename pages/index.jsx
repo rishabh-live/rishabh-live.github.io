@@ -28,7 +28,7 @@ function Indexpage({ todos }) {
         />
         <meta
           name="description"
-          content="I am Rishabh. Student of Information Tecnology at Sikkim Manipal Institute of Technology aka SMIT. Also a Web Developer at GLadiolus Langauge Nectar"
+          content="I am Rishabh. Student of Information Technology at Sikkim Manipal Institute of Technology aka SMIT. Also a Web Developer at Gladiolus Langauge Nectar"
         />
       </HEAD>
       <section className="main-page-section-one">
