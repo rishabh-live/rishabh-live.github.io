@@ -1,6 +1,8 @@
 import LINK from "next/link";
 import Gitdata from "../components/database/gitrepos.json";
 import HEAD from "next/head";
+import Particles from 'react-particles-js';
+import particlesConfig from '../components/configs/particle.config.js';
 
 function Indexpage({ todos }) {
   var key = 0;
@@ -30,8 +32,13 @@ function Indexpage({ todos }) {
           name="description"
           content="I am Rishabh. Student of Information Technology at Sikkim Manipal Institute of Technology aka SMIT. Also a Web Developer at Gladiolus Langauge Nectar"
         />
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
       </HEAD>
+      
       <section className="main-page-section-one">
+      <div style={{ position: 'absolute'}}>
+      <Particles height="100vh" width="100vw" params={particlesConfig} />
+      </div>
         <center>
           <div class="line">
             <label>Hi, I am Rishabh. </label>
@@ -184,6 +191,7 @@ function Indexpage({ todos }) {
           </div>
         </center>
       </section>
+      <script src="assets/main/js/particles.js"></script>
       {/* <section class="secThree">
         <center>
           <div class="headline">
