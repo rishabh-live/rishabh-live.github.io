@@ -23,6 +23,7 @@ const App = ({ Component, pageProps }) => {
       <HEAD>
         <link rel="stylesheet" href="/assets/global/css/w3.min.css" />
         <link rel="stylesheet" href="/assets/global/css/footer.css" />
+        <link rel="stylesheet" href="/assets/main/css/footer.css" />
       </HEAD>
       <Component {...pageProps} />
       <Footer />
