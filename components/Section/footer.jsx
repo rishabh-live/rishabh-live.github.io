@@ -1,6 +1,6 @@
 import LINK from "next/link";
 
-export default () => {
+export default function Footer() {
   const baseLink = {
     url: "https://rishabh.live",
     smitWhatsMyDp: "https://whatsmydp.rishabh.live",
@@ -73,12 +73,14 @@ export default () => {
               <ul>
                 <li>
                   <LINK href={baseLink.url + "/pdfs/Rishabh_Resume.pdf"}>
-                    <a href={baseLink.url + "/pdfs/Rishabh_Resume.pdf"} target="_blank">
+                    <a
+                      href={baseLink.url + "/pdfs/Rishabh_Resume.pdf"}
+                      target="_blank"
+                    >
                       My Resume
                     </a>
                   </LINK>
                 </li>
-                
               </ul>
             </div>
 
@@ -141,4 +143,4 @@ export default () => {
       </section>
     </>
   );
-};
+}
