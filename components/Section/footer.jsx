@@ -7,7 +7,8 @@ export default function Footer() {
     aws: "https://aws.rishabh.live",
     blogs: "https://blogs.rishabh.live",
     anchalakirasoi: "https://anchalakirasoi.rishabh.live/",
-    webresume : "https://resume.rishabh.live"
+    webresume : "https://resume.rishabh.live",
+    previewsite : "https://preview.rishabh.live"
   };
   const img = {
     facebook:
@@ -40,6 +41,11 @@ export default function Footer() {
                 <li>
                   <LINK href={baseLink.url + "#projects"}>
                     <a href={baseLink.url + "#projects"}>My Projects</a>
+                  </LINK>
+                </li>
+                <li>
+                  <LINK href={baseLink.previewsite}>
+                    <a href={baseLink.previewsite} target="_blank">Website Updates</a>
                   </LINK>
                 </li>
               </ul>
