@@ -74,7 +74,7 @@ function Indexpage({ todos }) {
             </div>
             <div class="dp">
               <img
-                src="/rishabh.png"
+                src="/rishabh_22_aug_2021.jpg"
                 alt="Rishabh-Live | Rishabh"
                 class="w3-card-4 shadow"
                 align="center"
