@@ -7,6 +7,8 @@ export default function Footer() {
     aws: "https://aws.rishabh.live",
     blogs: "https://blogs.rishabh.live",
     anchalakirasoi: "https://anchalakirasoi.rishabh.live/",
+    webresume : "https://resume.rishabh.live",
+    previewsite : "https://preview.rishabh.live"
   };
   const img = {
     facebook:
@@ -41,29 +43,39 @@ export default function Footer() {
                     <a href={baseLink.url + "#projects"}>My Projects</a>
                   </LINK>
                 </li>
+                <li>
+                  <LINK href={baseLink.previewsite}>
+                    <a href={baseLink.previewsite} target="_blank">Website Updates</a>
+                  </LINK>
+                </li>
               </ul>
             </div>
             <div className="col">
               <h1>Sub Domains</h1>
               <ul>
+              <li>
+                  <LINK href={baseLink.webresume}>
+                    <a href={baseLink.webresume} target="_blank">My Web Resume</a>
+                  </LINK>
+                </li>
                 <li>
                   <LINK href={baseLink.smitWhatsMyDp}>
-                    <a href={baseLink.smitWhatsMyDp}>SMIT WHATSMYDP</a>
+                    <a href={baseLink.smitWhatsMyDp} target="_blank">SMIT WHATSMYDP</a>
                   </LINK>
                 </li>
                 <li>
                   <LINK href={baseLink.aws}>
-                    <a href={baseLink.aws}>AWS EC2</a>
+                    <a href={baseLink.aws} target="_blank">AWS EC2</a>
                   </LINK>
                 </li>
                 <li>
                   <LINK href={baseLink.blogs}>
-                    <a href={baseLink.blogs}>Blogs</a>
+                    <a href={baseLink.blogs} target="_blank">Blogs</a>
                   </LINK>
                 </li>
                 <li>
                   <LINK href={baseLink.anchalakirasoi}>
-                    <a href={baseLink.anchalakirasoi}>Anchala Ki Rasoi</a>
+                    <a href={baseLink.anchalakirasoi} target="_blank">Anchala Ki Rasoi</a>
                   </LINK>
                 </li>
               </ul>
